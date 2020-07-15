@@ -1,0 +1,1317 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Web.Api\\Egoal.Web.Api.csproj": {}
+  },
+  "projects": {
+    "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Application\\Egoal.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Application\\Egoal.Application.csproj",
+        "projectName": "Egoal.Application",
+        "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Application\\Egoal.Application.csproj",
+        "packagesPath": "C:\\Users\\ChenDian\\.nuget\\packages\\",
+        "outputPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ChenDian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Domain\\Egoal.Domain.csproj": {
+                "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Domain\\Egoal.Domain.csproj"
+              },
+              "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Infrastructure\\Egoal.Infrastructure.csproj": {
+                "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Infrastructure\\Egoal.Infrastructure.csproj"
+              },
+              "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Model\\Egoal.Model.csproj": {
+                "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Model\\Egoal.Model.csproj"
+              },
+              "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Payment.Alipay\\Egoal.Payment.Alipay.csproj": {
+                "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Payment.Alipay\\Egoal.Payment.Alipay.csproj"
+              },
+              "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Payment.ICBC\\Egoal.Payment.IcbcPay.csproj": {
+                "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Payment.ICBC\\Egoal.Payment.IcbcPay.csproj"
+              },
+              "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Payment.SaobePay\\Egoal.Payment.SaobePay.csproj": {
+                "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Payment.SaobePay\\Egoal.Payment.SaobePay.csproj"
+              },
+              "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Payment.WeChatPay\\Egoal.Payment.WeChatPay.csproj": {
+                "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Payment.WeChatPay\\Egoal.Payment.WeChatPay.csproj"
+              },
+              "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.WeChat\\Egoal.WeChat.csproj": {
+                "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.WeChat\\Egoal.WeChat.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.Extensions.Localization": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.AspNetCore\\Egoal.AspNetCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.AspNetCore\\Egoal.AspNetCore.csproj",
+        "projectName": "Egoal.AspNetCore",
+        "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.AspNetCore\\Egoal.AspNetCore.csproj",
+        "packagesPath": "C:\\Users\\ChenDian\\.nuget\\packages\\",
+        "outputPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.AspNetCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ChenDian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Infrastructure\\Egoal.Infrastructure.csproj": {
+                "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Infrastructure\\Egoal.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.AspNetCore.SignalR": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "Microsoft.AspNetCore.StaticFiles": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Domain\\Egoal.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Domain\\Egoal.Domain.csproj",
+        "projectName": "Egoal.Domain",
+        "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Domain\\Egoal.Domain.csproj",
+        "packagesPath": "C:\\Users\\ChenDian\\.nuget\\packages\\",
+        "outputPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ChenDian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Infrastructure\\Egoal.Infrastructure.csproj": {
+                "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Infrastructure\\Egoal.Infrastructure.csproj"
+              },
+              "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Model\\Egoal.Model.csproj": {
+                "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Model\\Egoal.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.Extensions.Localization": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Email.MailKit\\Egoal.Email.MailKit.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Email.MailKit\\Egoal.Email.MailKit.csproj",
+        "projectName": "Egoal.Email.MailKit",
+        "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Email.MailKit\\Egoal.Email.MailKit.csproj",
+        "packagesPath": "C:\\Users\\ChenDian\\.nuget\\packages\\",
+        "outputPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Email.MailKit\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ChenDian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Infrastructure\\Egoal.Infrastructure.csproj": {
+                "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Infrastructure\\Egoal.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "MailKit": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.EntityFrameworkCore\\Egoal.EntityFrameworkCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.EntityFrameworkCore\\Egoal.EntityFrameworkCore.csproj",
+        "projectName": "Egoal.EntityFrameworkCore",
+        "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.EntityFrameworkCore\\Egoal.EntityFrameworkCore.csproj",
+        "packagesPath": "C:\\Users\\ChenDian\\.nuget\\packages\\",
+        "outputPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.EntityFrameworkCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ChenDian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Infrastructure\\Egoal.Infrastructure.csproj": {
+                "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Infrastructure\\Egoal.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Infrastructure\\Egoal.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Infrastructure\\Egoal.Infrastructure.csproj",
+        "projectName": "Egoal.Infrastructure",
+        "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Infrastructure\\Egoal.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\ChenDian\\.nuget\\packages\\",
+        "outputPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ChenDian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "EPPlus": {
+              "target": "Package",
+              "version": "[4.5.2.1, )"
+            },
+            "JetBrains.Annotations": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
+            "Microsoft.Extensions.Caching.Memory": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[5.2.2, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[11.0.2, )"
+            },
+            "Nito.AsyncEx.Context": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "QRCoder": {
+              "target": "Package",
+              "version": "[1.3.5, )"
+            },
+            "System.Collections.Immutable": {
+              "target": "Package",
+              "version": "[1.5.0, )"
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "TinyMapper": {
+              "target": "Package",
+              "version": "[3.0.2-beta, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Invoice.GuangDongBaiWangJiuBin\\Egoal.Invoice.GuangDongBaiWangJiuBin.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Invoice.GuangDongBaiWangJiuBin\\Egoal.Invoice.GuangDongBaiWangJiuBin.csproj",
+        "projectName": "Egoal.Invoice.GuangDongBaiWangJiuBin",
+        "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Invoice.GuangDongBaiWangJiuBin\\Egoal.Invoice.GuangDongBaiWangJiuBin.csproj",
+        "packagesPath": "C:\\Users\\ChenDian\\.nuget\\packages\\",
+        "outputPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Invoice.GuangDongBaiWangJiuBin\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ChenDian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Infrastructure\\Egoal.Infrastructure.csproj": {
+                "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Infrastructure\\Egoal.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "System.Text.Encoding.CodePages": {
+              "target": "Package",
+              "version": "[4.5.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Model\\Egoal.Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Model\\Egoal.Model.csproj",
+        "projectName": "Egoal.Model",
+        "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Model\\Egoal.Model.csproj",
+        "packagesPath": "C:\\Users\\ChenDian\\.nuget\\packages\\",
+        "outputPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ChenDian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Infrastructure\\Egoal.Infrastructure.csproj": {
+                "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Infrastructure\\Egoal.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.Extensions.Localization": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Payment.Alipay\\Egoal.Payment.Alipay.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Payment.Alipay\\Egoal.Payment.Alipay.csproj",
+        "projectName": "Egoal.Payment.Alipay",
+        "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Payment.Alipay\\Egoal.Payment.Alipay.csproj",
+        "packagesPath": "C:\\Users\\ChenDian\\.nuget\\packages\\",
+        "outputPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Payment.Alipay\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ChenDian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Infrastructure\\Egoal.Infrastructure.csproj": {
+                "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Infrastructure\\Egoal.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.CSharp": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Payment.IcbcPay.CA\\Egoal.Payment.IcbcPay.CA.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Payment.IcbcPay.CA\\Egoal.Payment.IcbcPay.CA.csproj",
+        "projectName": "Egoal.Payment.IcbcPay.CA",
+        "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Payment.IcbcPay.CA\\Egoal.Payment.IcbcPay.CA.csproj"
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
+    "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Payment.ICBC\\Egoal.Payment.IcbcPay.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Payment.ICBC\\Egoal.Payment.IcbcPay.csproj",
+        "projectName": "Egoal.Payment.IcbcPay",
+        "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Payment.ICBC\\Egoal.Payment.IcbcPay.csproj",
+        "packagesPath": "C:\\Users\\ChenDian\\.nuget\\packages\\",
+        "outputPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Payment.ICBC\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ChenDian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Infrastructure\\Egoal.Infrastructure.csproj": {
+                "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Infrastructure\\Egoal.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.CSharp": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Payment.SaobePay\\Egoal.Payment.SaobePay.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Payment.SaobePay\\Egoal.Payment.SaobePay.csproj",
+        "projectName": "Egoal.Payment.SaobePay",
+        "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Payment.SaobePay\\Egoal.Payment.SaobePay.csproj",
+        "packagesPath": "C:\\Users\\ChenDian\\.nuget\\packages\\",
+        "outputPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Payment.SaobePay\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ChenDian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Infrastructure\\Egoal.Infrastructure.csproj": {
+                "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Infrastructure\\Egoal.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Payment.WeChatPay\\Egoal.Payment.WeChatPay.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Payment.WeChatPay\\Egoal.Payment.WeChatPay.csproj",
+        "projectName": "Egoal.Payment.WeChatPay",
+        "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Payment.WeChatPay\\Egoal.Payment.WeChatPay.csproj",
+        "packagesPath": "C:\\Users\\ChenDian\\.nuget\\packages\\",
+        "outputPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Payment.WeChatPay\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ChenDian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Infrastructure\\Egoal.Infrastructure.csproj": {
+                "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Infrastructure\\Egoal.Infrastructure.csproj"
+              },
+              "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.WeChat\\Egoal.WeChat.csproj": {
+                "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.WeChat\\Egoal.WeChat.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Redis\\Egoal.Redis.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Redis\\Egoal.Redis.csproj",
+        "projectName": "Egoal.Redis",
+        "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Redis\\Egoal.Redis.csproj",
+        "packagesPath": "C:\\Users\\ChenDian\\.nuget\\packages\\",
+        "outputPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Redis\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ChenDian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Infrastructure\\Egoal.Infrastructure.csproj": {
+                "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Infrastructure\\Egoal.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "RedLock.net": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.0.601, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Repository\\Egoal.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Repository\\Egoal.Repository.csproj",
+        "projectName": "Egoal.Repository",
+        "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Repository\\Egoal.Repository.csproj",
+        "packagesPath": "C:\\Users\\ChenDian\\.nuget\\packages\\",
+        "outputPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ChenDian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Application\\Egoal.Application.csproj": {
+                "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Application\\Egoal.Application.csproj"
+              },
+              "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Domain\\Egoal.Domain.csproj": {
+                "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Domain\\Egoal.Domain.csproj"
+              },
+              "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.EntityFrameworkCore\\Egoal.EntityFrameworkCore.csproj": {
+                "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.EntityFrameworkCore\\Egoal.EntityFrameworkCore.csproj"
+              },
+              "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Infrastructure\\Egoal.Infrastructure.csproj": {
+                "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Infrastructure\\Egoal.Infrastructure.csproj"
+              },
+              "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Model\\Egoal.Model.csproj": {
+                "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Model\\Egoal.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[1.50.5, )"
+            },
+            "Microsoft.CSharp": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.ShortMessage.Huyi\\Egoal.ShortMessage.Huyi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.ShortMessage.Huyi\\Egoal.ShortMessage.Huyi.csproj",
+        "projectName": "Egoal.ShortMessage.Huyi",
+        "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.ShortMessage.Huyi\\Egoal.ShortMessage.Huyi.csproj",
+        "packagesPath": "C:\\Users\\ChenDian\\.nuget\\packages\\",
+        "outputPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.ShortMessage.Huyi\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ChenDian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Infrastructure\\Egoal.Infrastructure.csproj": {
+                "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Infrastructure\\Egoal.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Web.Api\\Egoal.Web.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Web.Api\\Egoal.Web.Api.csproj",
+        "projectName": "Egoal.Web.Api",
+        "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Web.Api\\Egoal.Web.Api.csproj",
+        "packagesPath": "C:\\Users\\ChenDian\\.nuget\\packages\\",
+        "outputPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Web.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ChenDian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Application\\Egoal.Application.csproj": {
+                "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Application\\Egoal.Application.csproj"
+              },
+              "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.AspNetCore\\Egoal.AspNetCore.csproj": {
+                "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.AspNetCore\\Egoal.AspNetCore.csproj"
+              },
+              "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Email.MailKit\\Egoal.Email.MailKit.csproj": {
+                "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Email.MailKit\\Egoal.Email.MailKit.csproj"
+              },
+              "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.EntityFrameworkCore\\Egoal.EntityFrameworkCore.csproj": {
+                "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.EntityFrameworkCore\\Egoal.EntityFrameworkCore.csproj"
+              },
+              "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Infrastructure\\Egoal.Infrastructure.csproj": {
+                "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Infrastructure\\Egoal.Infrastructure.csproj"
+              },
+              "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Invoice.GuangDongBaiWangJiuBin\\Egoal.Invoice.GuangDongBaiWangJiuBin.csproj": {
+                "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Invoice.GuangDongBaiWangJiuBin\\Egoal.Invoice.GuangDongBaiWangJiuBin.csproj"
+              },
+              "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Model\\Egoal.Model.csproj": {
+                "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Model\\Egoal.Model.csproj"
+              },
+              "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Payment.Alipay\\Egoal.Payment.Alipay.csproj": {
+                "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Payment.Alipay\\Egoal.Payment.Alipay.csproj"
+              },
+              "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Payment.IcbcPay.CA\\Egoal.Payment.IcbcPay.CA.csproj": {
+                "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Payment.IcbcPay.CA\\Egoal.Payment.IcbcPay.CA.csproj"
+              },
+              "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Payment.ICBC\\Egoal.Payment.IcbcPay.csproj": {
+                "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Payment.ICBC\\Egoal.Payment.IcbcPay.csproj"
+              },
+              "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Payment.SaobePay\\Egoal.Payment.SaobePay.csproj": {
+                "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Payment.SaobePay\\Egoal.Payment.SaobePay.csproj"
+              },
+              "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Payment.WeChatPay\\Egoal.Payment.WeChatPay.csproj": {
+                "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Payment.WeChatPay\\Egoal.Payment.WeChatPay.csproj"
+              },
+              "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Redis\\Egoal.Redis.csproj": {
+                "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Redis\\Egoal.Redis.csproj"
+              },
+              "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Repository\\Egoal.Repository.csproj": {
+                "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Repository\\Egoal.Repository.csproj"
+              },
+              "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.ShortMessage.Huyi\\Egoal.ShortMessage.Huyi.csproj": {
+                "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.ShortMessage.Huyi\\Egoal.ShortMessage.Huyi.csproj"
+              },
+              "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.WeChat\\Egoal.WeChat.csproj": {
+                "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.WeChat\\Egoal.WeChat.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.CodeAnalysis.Common": {
+              "target": "Package",
+              "version": "[2.8.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "NLog.Web.AspNetCore": {
+              "target": "Package",
+              "version": "[4.5.4, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.WeChat\\Egoal.WeChat.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.WeChat\\Egoal.WeChat.csproj",
+        "projectName": "Egoal.WeChat",
+        "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.WeChat\\Egoal.WeChat.csproj",
+        "packagesPath": "C:\\Users\\ChenDian\\.nuget\\packages\\",
+        "outputPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.WeChat\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ChenDian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Infrastructure\\Egoal.Infrastructure.csproj": {
+                "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Infrastructure\\Egoal.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

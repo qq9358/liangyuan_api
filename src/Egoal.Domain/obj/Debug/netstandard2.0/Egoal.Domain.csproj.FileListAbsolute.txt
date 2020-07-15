@@ -1,0 +1,16 @@
+D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Domain\bin\Debug\netstandard2.0\Egoal.Domain.deps.json
+D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Domain\bin\Debug\netstandard2.0\Egoal.Domain.dll
+D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Domain\bin\Debug\netstandard2.0\Egoal.Domain.pdb
+D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Domain\bin\Debug\netstandard2.0\Egoal.Infrastructure.dll
+D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Domain\bin\Debug\netstandard2.0\Egoal.Model.dll
+D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Domain\bin\Debug\netstandard2.0\Egoal.Infrastructure.pdb
+D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Domain\bin\Debug\netstandard2.0\Egoal.Model.pdb
+D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Domain\bin\Debug\netstandard2.0\en-US\Egoal.Model.resources.dll
+D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Domain\bin\Debug\netstandard2.0\zh-CN\Egoal.Model.resources.dll
+D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Domain\obj\Debug\netstandard2.0\Egoal.Domain.csprojAssemblyReference.cache
+D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Domain\obj\Debug\netstandard2.0\Egoal.Domain.AssemblyInfoInputs.cache
+D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Domain\obj\Debug\netstandard2.0\Egoal.Domain.AssemblyInfo.cs
+D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Domain\obj\Debug\netstandard2.0\Egoal.Domain.csproj.CoreCompileInputs.cache
+D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Domain\obj\Debug\netstandard2.0\Egoal.Domain.csproj.CopyComplete
+D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Domain\obj\Debug\netstandard2.0\Egoal.Domain.dll
+D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Domain\obj\Debug\netstandard2.0\Egoal.Domain.pdb

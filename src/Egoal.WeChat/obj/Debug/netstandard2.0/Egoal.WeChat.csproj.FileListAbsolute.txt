@@ -1,0 +1,12 @@
+D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\bin\Debug\netstandard2.0\Egoal.WeChat.deps.json
+D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\bin\Debug\netstandard2.0\Egoal.WeChat.dll
+D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\bin\Debug\netstandard2.0\Egoal.WeChat.pdb
+D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\bin\Debug\netstandard2.0\Egoal.Infrastructure.dll
+D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\bin\Debug\netstandard2.0\Egoal.Infrastructure.pdb
+D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\obj\Debug\netstandard2.0\Egoal.WeChat.csprojAssemblyReference.cache
+D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\obj\Debug\netstandard2.0\Egoal.WeChat.AssemblyInfoInputs.cache
+D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\obj\Debug\netstandard2.0\Egoal.WeChat.AssemblyInfo.cs
+D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\obj\Debug\netstandard2.0\Egoal.WeChat.csproj.CoreCompileInputs.cache
+D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\obj\Debug\netstandard2.0\Egoal.WeChat.csproj.CopyComplete
+D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\obj\Debug\netstandard2.0\Egoal.WeChat.dll
+D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\obj\Debug\netstandard2.0\Egoal.WeChat.pdb

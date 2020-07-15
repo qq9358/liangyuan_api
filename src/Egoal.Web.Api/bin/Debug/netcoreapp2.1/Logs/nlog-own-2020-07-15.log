@@ -1,0 +1,1200 @@
+2020-07-15 08:10:08.7397||DEBUG|Egoal.Web.Api.Program|init main |url: |action: 
+2020-07-15 08:10:16.3263||ERROR|Egoal.Settings.SettingAppService|
+WindowsCryptographicException:指定的网络密码不正确。
+StackTrace:
+   at Internal.Cryptography.Pal.CertificatePal.FilterPFXStore(Byte[] rawData, SafePasswordHandle password, PfxCertStoreFlags pfxCertStoreFlags)
+   at Internal.Cryptography.Pal.CertificatePal.FromBlobOrFile(Byte[] rawData, String fileName, SafePasswordHandle password, X509KeyStorageFlags keyStorageFlags)
+   at System.Security.Cryptography.X509Certificates.X509Certificate..ctor(Byte[] rawData, String password, X509KeyStorageFlags keyStorageFlags)
+   at System.Security.Cryptography.X509Certificates.X509Certificate2..ctor(Byte[] rawData, String password)
+   at Egoal.Settings.SettingAppService.ConfigWeChatOptionsAsync() in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Application\Settings\SettingAppService.cs:line 76
+ |url: |action: 
+2020-07-15 08:10:18.1048||DEBUG|Egoal.BackgroundJobs.BackgroundJobManager|BackgroundJobManager is starting. |url: |action: 
+2020-07-15 08:10:18.1743||DEBUG|Egoal.WeChat.OAuth.RefreshAccessTokenWorker|RefreshAccessTokenWorker is starting. |url: |action: 
+2020-07-15 08:10:18.2835||DEBUG|Egoal.Invoice.GuangDongBaiWangJiuBin.RefreshAccessTokenWorker|RefreshAccessTokenWorker is starting. |url: |action: 
+2020-07-15 08:10:18.3329||DEBUG|Egoal.Redis.RewriteAofWorker|RewriteAofWorker is starting. |url: |action: 
+2020-07-15 08:10:18.9666||ERROR|Egoal.Invoice.GuangDongBaiWangJiuBin.InvoiceService|Response status code does not indicate success: 404 (Not Found).--<?xml version="1.0" encoding="gbk"?><business id="YHYZ" comment="用户验证"><user lxdm="用户类型"><name>554433221100001</name><sn>F96DFEE0B0D98180AFCC9551209A0DB7B3388B08732AB3E43878232945D4C02B6B00DC122B8DB718C8C72CEB4FC03576D97C8AF3FB90B4D6A7CE26F42E50D087B634902AEF33072C</sn></user></business>-- |url: |action: 
+2020-07-15 08:10:18.9875||ERROR|Egoal.WeChat.OAuth.RefreshAccessTokenWorker|
+HttpRequestException:Response status code does not indicate success: 404 (Not Found).
+StackTrace:
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at System.Net.Http.HttpClient.GetByteArrayAsyncCore(Task`1 getTask)
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url, Encoding encoding) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 38
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 33
+   at Egoal.WeChat.OAuth.OAuthApi.GetAccessTokenAsync() in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\OAuthApi.cs:line 29
+   at Egoal.WeChat.OAuth.RefreshAccessTokenWorker.DoWorkAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\RefreshAccessTokenWorker.cs:line 29
+   at Egoal.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.ExecuteAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:line 33
+ |url: |action: 
+2020-07-15 08:11:19.8419||DEBUG|Egoal.Web.Api.Program|init main |url: |action: 
+2020-07-15 08:11:24.0834||ERROR|Egoal.Settings.SettingAppService|
+WindowsCryptographicException:指定的网络密码不正确。
+StackTrace:
+   at Internal.Cryptography.Pal.CertificatePal.FilterPFXStore(Byte[] rawData, SafePasswordHandle password, PfxCertStoreFlags pfxCertStoreFlags)
+   at Internal.Cryptography.Pal.CertificatePal.FromBlobOrFile(Byte[] rawData, String fileName, SafePasswordHandle password, X509KeyStorageFlags keyStorageFlags)
+   at System.Security.Cryptography.X509Certificates.X509Certificate..ctor(Byte[] rawData, String password, X509KeyStorageFlags keyStorageFlags)
+   at System.Security.Cryptography.X509Certificates.X509Certificate2..ctor(Byte[] rawData, String password)
+   at Egoal.Settings.SettingAppService.ConfigWeChatOptionsAsync() in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Application\Settings\SettingAppService.cs:line 76
+ |url: |action: 
+2020-07-15 08:11:25.3671||DEBUG|Egoal.BackgroundJobs.BackgroundJobManager|BackgroundJobManager is starting. |url: |action: 
+2020-07-15 08:11:25.4447||DEBUG|Egoal.WeChat.OAuth.RefreshAccessTokenWorker|RefreshAccessTokenWorker is starting. |url: |action: 
+2020-07-15 08:11:25.5697||DEBUG|Egoal.Invoice.GuangDongBaiWangJiuBin.RefreshAccessTokenWorker|RefreshAccessTokenWorker is starting. |url: |action: 
+2020-07-15 08:11:25.6190||DEBUG|Egoal.Redis.RewriteAofWorker|RewriteAofWorker is starting. |url: |action: 
+2020-07-15 08:11:25.9542||ERROR|Egoal.WeChat.OAuth.RefreshAccessTokenWorker|
+HttpRequestException:Response status code does not indicate success: 404 (Not Found).
+StackTrace:
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at System.Net.Http.HttpClient.GetByteArrayAsyncCore(Task`1 getTask)
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url, Encoding encoding) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 38
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 33
+   at Egoal.WeChat.OAuth.OAuthApi.GetAccessTokenAsync() in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\OAuthApi.cs:line 29
+   at Egoal.WeChat.OAuth.RefreshAccessTokenWorker.DoWorkAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\RefreshAccessTokenWorker.cs:line 29
+   at Egoal.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.ExecuteAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:line 33
+ |url: |action: 
+2020-07-15 08:11:26.1151||ERROR|Egoal.Invoice.GuangDongBaiWangJiuBin.InvoiceService|Response status code does not indicate success: 404 (Not Found).--<?xml version="1.0" encoding="gbk"?><business id="YHYZ" comment="用户验证"><user lxdm="用户类型"><name>554433221100001</name><sn>F96DFEE0B0D98180AFCC9551209A0DB7B3388B08732AB3E43878232945D4C02B6B00DC122B8DB718C8C72CEB4FC03576D97C8AF3FB90B4D6A7CE26F42E50D087B634902AEF33072C</sn></user></business>-- |url: |action: 
+2020-07-15 08:21:26.4415||ERROR|Egoal.WeChat.OAuth.RefreshAccessTokenWorker|
+HttpRequestException:Response status code does not indicate success: 404 (Not Found).
+StackTrace:
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at System.Net.Http.HttpClient.GetByteArrayAsyncCore(Task`1 getTask)
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url, Encoding encoding) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 38
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 33
+   at Egoal.WeChat.OAuth.OAuthApi.GetAccessTokenAsync() in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\OAuthApi.cs:line 29
+   at Egoal.WeChat.OAuth.RefreshAccessTokenWorker.DoWorkAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\RefreshAccessTokenWorker.cs:line 29
+   at Egoal.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.ExecuteAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:line 33
+ |url: |action: 
+2020-07-15 08:21:26.6542||ERROR|Egoal.Invoice.GuangDongBaiWangJiuBin.InvoiceService|Response status code does not indicate success: 404 (Not Found).--<?xml version="1.0" encoding="gbk"?><business id="YHYZ" comment="用户验证"><user lxdm="用户类型"><name>554433221100001</name><sn>F96DFEE0B0D98180AFCC9551209A0DB7B3388B08732AB3E43878232945D4C02B6B00DC122B8DB718C8C72CEB4FC03576D97C8AF3FB90B4D6A7CE26F42E50D087B634902AEF33072C</sn></user></business>-- |url: |action: 
+2020-07-15 08:31:26.9001||ERROR|Egoal.WeChat.OAuth.RefreshAccessTokenWorker|
+HttpRequestException:Response status code does not indicate success: 404 (Not Found).
+StackTrace:
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at System.Net.Http.HttpClient.GetByteArrayAsyncCore(Task`1 getTask)
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url, Encoding encoding) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 38
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 33
+   at Egoal.WeChat.OAuth.OAuthApi.GetAccessTokenAsync() in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\OAuthApi.cs:line 29
+   at Egoal.WeChat.OAuth.RefreshAccessTokenWorker.DoWorkAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\RefreshAccessTokenWorker.cs:line 29
+   at Egoal.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.ExecuteAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:line 33
+ |url: |action: 
+2020-07-15 08:31:27.0273||ERROR|Egoal.Invoice.GuangDongBaiWangJiuBin.InvoiceService|Response status code does not indicate success: 404 (Not Found).--<?xml version="1.0" encoding="gbk"?><business id="YHYZ" comment="用户验证"><user lxdm="用户类型"><name>554433221100001</name><sn>F96DFEE0B0D98180AFCC9551209A0DB7B3388B08732AB3E43878232945D4C02B6B00DC122B8DB718C8C72CEB4FC03576D97C8AF3FB90B4D6A7CE26F42E50D087B634902AEF33072C</sn></user></business>-- |url: |action: 
+2020-07-15 08:41:27.7755||ERROR|Egoal.WeChat.OAuth.RefreshAccessTokenWorker|
+HttpRequestException:Response status code does not indicate success: 404 (Not Found).
+StackTrace:
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at System.Net.Http.HttpClient.GetByteArrayAsyncCore(Task`1 getTask)
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url, Encoding encoding) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 38
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 33
+   at Egoal.WeChat.OAuth.OAuthApi.GetAccessTokenAsync() in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\OAuthApi.cs:line 29
+   at Egoal.WeChat.OAuth.RefreshAccessTokenWorker.DoWorkAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\RefreshAccessTokenWorker.cs:line 29
+   at Egoal.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.ExecuteAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:line 33
+ |url: |action: 
+2020-07-15 08:41:27.9166||ERROR|Egoal.Invoice.GuangDongBaiWangJiuBin.InvoiceService|Response status code does not indicate success: 404 (Not Found).--<?xml version="1.0" encoding="gbk"?><business id="YHYZ" comment="用户验证"><user lxdm="用户类型"><name>554433221100001</name><sn>F96DFEE0B0D98180AFCC9551209A0DB7B3388B08732AB3E43878232945D4C02B6B00DC122B8DB718C8C72CEB4FC03576D97C8AF3FB90B4D6A7CE26F42E50D087B634902AEF33072C</sn></user></business>-- |url: |action: 
+2020-07-15 08:51:28.2790||ERROR|Egoal.WeChat.OAuth.RefreshAccessTokenWorker|
+HttpRequestException:Response status code does not indicate success: 404 (Not Found).
+StackTrace:
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at System.Net.Http.HttpClient.GetByteArrayAsyncCore(Task`1 getTask)
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url, Encoding encoding) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 38
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 33
+   at Egoal.WeChat.OAuth.OAuthApi.GetAccessTokenAsync() in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\OAuthApi.cs:line 29
+   at Egoal.WeChat.OAuth.RefreshAccessTokenWorker.DoWorkAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\RefreshAccessTokenWorker.cs:line 29
+   at Egoal.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.ExecuteAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:line 33
+ |url: |action: 
+2020-07-15 08:51:28.3355||ERROR|Egoal.Invoice.GuangDongBaiWangJiuBin.InvoiceService|Response status code does not indicate success: 404 (Not Found).--<?xml version="1.0" encoding="gbk"?><business id="YHYZ" comment="用户验证"><user lxdm="用户类型"><name>554433221100001</name><sn>F96DFEE0B0D98180AFCC9551209A0DB7B3388B08732AB3E43878232945D4C02B6B00DC122B8DB718C8C72CEB4FC03576D97C8AF3FB90B4D6A7CE26F42E50D087B634902AEF33072C</sn></user></business>-- |url: |action: 
+2020-07-15 09:01:41.7529||DEBUG|Egoal.Web.Api.Program|init main |url: |action: 
+2020-07-15 09:01:47.0959||ERROR|Egoal.Settings.SettingAppService|
+WindowsCryptographicException:指定的网络密码不正确。
+StackTrace:
+   at Internal.Cryptography.Pal.CertificatePal.FilterPFXStore(Byte[] rawData, SafePasswordHandle password, PfxCertStoreFlags pfxCertStoreFlags)
+   at Internal.Cryptography.Pal.CertificatePal.FromBlobOrFile(Byte[] rawData, String fileName, SafePasswordHandle password, X509KeyStorageFlags keyStorageFlags)
+   at System.Security.Cryptography.X509Certificates.X509Certificate..ctor(Byte[] rawData, String password, X509KeyStorageFlags keyStorageFlags)
+   at System.Security.Cryptography.X509Certificates.X509Certificate2..ctor(Byte[] rawData, String password)
+   at Egoal.Settings.SettingAppService.ConfigWeChatOptionsAsync() in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Application\Settings\SettingAppService.cs:line 76
+ |url: |action: 
+2020-07-15 09:01:48.4952||DEBUG|Egoal.BackgroundJobs.BackgroundJobManager|BackgroundJobManager is starting. |url: |action: 
+2020-07-15 09:01:48.5710||DEBUG|Egoal.WeChat.OAuth.RefreshAccessTokenWorker|RefreshAccessTokenWorker is starting. |url: |action: 
+2020-07-15 09:01:48.6734||DEBUG|Egoal.Invoice.GuangDongBaiWangJiuBin.RefreshAccessTokenWorker|RefreshAccessTokenWorker is starting. |url: |action: 
+2020-07-15 09:01:48.7135||DEBUG|Egoal.Redis.RewriteAofWorker|RewriteAofWorker is starting. |url: |action: 
+2020-07-15 09:01:49.1659||ERROR|Egoal.Invoice.GuangDongBaiWangJiuBin.InvoiceService|Response status code does not indicate success: 404 (Not Found).--<?xml version="1.0" encoding="gbk"?><business id="YHYZ" comment="用户验证"><user lxdm="用户类型"><name>554433221100001</name><sn>F96DFEE0B0D98180AFCC9551209A0DB7B3388B08732AB3E43878232945D4C02B6B00DC122B8DB718C8C72CEB4FC03576D97C8AF3FB90B4D6A7CE26F42E50D087B634902AEF33072C</sn></user></business>-- |url: |action: 
+2020-07-15 09:01:49.1659||ERROR|Egoal.WeChat.OAuth.RefreshAccessTokenWorker|
+HttpRequestException:Response status code does not indicate success: 404 (Not Found).
+StackTrace:
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at System.Net.Http.HttpClient.GetByteArrayAsyncCore(Task`1 getTask)
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url, Encoding encoding) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 38
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 33
+   at Egoal.WeChat.OAuth.OAuthApi.GetAccessTokenAsync() in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\OAuthApi.cs:line 29
+   at Egoal.WeChat.OAuth.RefreshAccessTokenWorker.DoWorkAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\RefreshAccessTokenWorker.cs:line 29
+   at Egoal.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.ExecuteAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:line 33
+ |url: |action: 
+2020-07-15 09:45:19.6075||DEBUG|Egoal.Web.Api.Program|init main |url: |action: 
+2020-07-15 09:45:23.8633||ERROR|Egoal.Settings.SettingAppService|
+WindowsCryptographicException:指定的网络密码不正确。
+StackTrace:
+   at Internal.Cryptography.Pal.CertificatePal.FilterPFXStore(Byte[] rawData, SafePasswordHandle password, PfxCertStoreFlags pfxCertStoreFlags)
+   at Internal.Cryptography.Pal.CertificatePal.FromBlobOrFile(Byte[] rawData, String fileName, SafePasswordHandle password, X509KeyStorageFlags keyStorageFlags)
+   at System.Security.Cryptography.X509Certificates.X509Certificate..ctor(Byte[] rawData, String password, X509KeyStorageFlags keyStorageFlags)
+   at System.Security.Cryptography.X509Certificates.X509Certificate2..ctor(Byte[] rawData, String password)
+   at Egoal.Settings.SettingAppService.ConfigWeChatOptionsAsync() in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Application\Settings\SettingAppService.cs:line 76
+ |url: |action: 
+2020-07-15 09:45:24.9818||DEBUG|Egoal.BackgroundJobs.BackgroundJobManager|BackgroundJobManager is starting. |url: |action: 
+2020-07-15 09:45:25.0497||DEBUG|Egoal.WeChat.OAuth.RefreshAccessTokenWorker|RefreshAccessTokenWorker is starting. |url: |action: 
+2020-07-15 09:45:25.1427||DEBUG|Egoal.Invoice.GuangDongBaiWangJiuBin.RefreshAccessTokenWorker|RefreshAccessTokenWorker is starting. |url: |action: 
+2020-07-15 09:45:25.1821||DEBUG|Egoal.Redis.RewriteAofWorker|RewriteAofWorker is starting. |url: |action: 
+2020-07-15 09:45:25.7019||ERROR|Egoal.Invoice.GuangDongBaiWangJiuBin.InvoiceService|Response status code does not indicate success: 404 (Not Found).--<?xml version="1.0" encoding="gbk"?><business id="YHYZ" comment="用户验证"><user lxdm="用户类型"><name>554433221100001</name><sn>F96DFEE0B0D98180AFCC9551209A0DB7B3388B08732AB3E43878232945D4C02B6B00DC122B8DB718C8C72CEB4FC03576D97C8AF3FB90B4D6A7CE26F42E50D087B634902AEF33072C</sn></user></business>-- |url: |action: 
+2020-07-15 09:45:25.7019||ERROR|Egoal.WeChat.OAuth.RefreshAccessTokenWorker|
+HttpRequestException:Response status code does not indicate success: 404 (Not Found).
+StackTrace:
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at System.Net.Http.HttpClient.GetByteArrayAsyncCore(Task`1 getTask)
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url, Encoding encoding) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 38
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 33
+   at Egoal.WeChat.OAuth.OAuthApi.GetAccessTokenAsync() in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\OAuthApi.cs:line 29
+   at Egoal.WeChat.OAuth.RefreshAccessTokenWorker.DoWorkAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\RefreshAccessTokenWorker.cs:line 29
+   at Egoal.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.ExecuteAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:line 33
+ |url: |action: 
+2020-07-15 09:46:45.9473||DEBUG|Egoal.Web.Api.Program|init main |url: |action: 
+2020-07-15 09:46:50.3451||ERROR|Egoal.Settings.SettingAppService|
+WindowsCryptographicException:指定的网络密码不正确。
+StackTrace:
+   at Internal.Cryptography.Pal.CertificatePal.FilterPFXStore(Byte[] rawData, SafePasswordHandle password, PfxCertStoreFlags pfxCertStoreFlags)
+   at Internal.Cryptography.Pal.CertificatePal.FromBlobOrFile(Byte[] rawData, String fileName, SafePasswordHandle password, X509KeyStorageFlags keyStorageFlags)
+   at System.Security.Cryptography.X509Certificates.X509Certificate..ctor(Byte[] rawData, String password, X509KeyStorageFlags keyStorageFlags)
+   at System.Security.Cryptography.X509Certificates.X509Certificate2..ctor(Byte[] rawData, String password)
+   at Egoal.Settings.SettingAppService.ConfigWeChatOptionsAsync() in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Application\Settings\SettingAppService.cs:line 76
+ |url: |action: 
+2020-07-15 09:46:51.4794||DEBUG|Egoal.BackgroundJobs.BackgroundJobManager|BackgroundJobManager is starting. |url: |action: 
+2020-07-15 09:46:51.5415||DEBUG|Egoal.WeChat.OAuth.RefreshAccessTokenWorker|RefreshAccessTokenWorker is starting. |url: |action: 
+2020-07-15 09:46:51.6347||DEBUG|Egoal.Invoice.GuangDongBaiWangJiuBin.RefreshAccessTokenWorker|RefreshAccessTokenWorker is starting. |url: |action: 
+2020-07-15 09:46:51.6787||DEBUG|Egoal.Redis.RewriteAofWorker|RewriteAofWorker is starting. |url: |action: 
+2020-07-15 09:46:52.1290||ERROR|Egoal.Invoice.GuangDongBaiWangJiuBin.InvoiceService|Response status code does not indicate success: 404 (Not Found).--<?xml version="1.0" encoding="gbk"?><business id="YHYZ" comment="用户验证"><user lxdm="用户类型"><name>554433221100001</name><sn>F96DFEE0B0D98180AFCC9551209A0DB7B3388B08732AB3E43878232945D4C02B6B00DC122B8DB718C8C72CEB4FC03576D97C8AF3FB90B4D6A7CE26F42E50D087B634902AEF33072C</sn></user></business>-- |url: |action: 
+2020-07-15 09:46:52.1545||ERROR|Egoal.WeChat.OAuth.RefreshAccessTokenWorker|
+HttpRequestException:Response status code does not indicate success: 404 (Not Found).
+StackTrace:
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at System.Net.Http.HttpClient.GetByteArrayAsyncCore(Task`1 getTask)
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url, Encoding encoding) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 38
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 33
+   at Egoal.WeChat.OAuth.OAuthApi.GetAccessTokenAsync() in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\OAuthApi.cs:line 29
+   at Egoal.WeChat.OAuth.RefreshAccessTokenWorker.DoWorkAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\RefreshAccessTokenWorker.cs:line 29
+   at Egoal.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.ExecuteAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:line 33
+ |url: |action: 
+2020-07-15 09:47:21.3604||ERROR|Egoal.WeChat.OAuth.OAuthApi|appid missing hints: [xehdK8iHRa-QGoobA!]--https://api.weixin.qq.com/sns/jscode2session?appid=&secret=&js_code=061KgKCA1Ozv9b0rEEAA1IBICA1KgKCb&grant_type=authorization_code--{"errcode":41002,"errmsg":"appid missing hints: [xehdK8iHRa-QGoobA!]"} |url: http://192.168.1.64/member/LoginFromWechatMiniProgramAsync|action: LoginFromWechatMiniProgramAsync
+2020-07-15 09:47:21.5800||ERROR|Egoal.WeChat.ApiBase|
+ApiException:appid missing hints: [xehdK8iHRa-QGoobA!]
+ |url: http://192.168.1.64/member/LoginFromWechatMiniProgramAsync|action: LoginFromWechatMiniProgramAsync
+2020-07-15 09:48:29.1323||DEBUG|Egoal.Web.Api.Program|init main |url: |action: 
+2020-07-15 09:48:33.4697||ERROR|Egoal.Settings.SettingAppService|
+WindowsCryptographicException:指定的网络密码不正确。
+StackTrace:
+   at Internal.Cryptography.Pal.CertificatePal.FilterPFXStore(Byte[] rawData, SafePasswordHandle password, PfxCertStoreFlags pfxCertStoreFlags)
+   at Internal.Cryptography.Pal.CertificatePal.FromBlobOrFile(Byte[] rawData, String fileName, SafePasswordHandle password, X509KeyStorageFlags keyStorageFlags)
+   at System.Security.Cryptography.X509Certificates.X509Certificate..ctor(Byte[] rawData, String password, X509KeyStorageFlags keyStorageFlags)
+   at System.Security.Cryptography.X509Certificates.X509Certificate2..ctor(Byte[] rawData, String password)
+   at Egoal.Settings.SettingAppService.ConfigWeChatOptionsAsync() in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Application\Settings\SettingAppService.cs:line 76
+ |url: |action: 
+2020-07-15 09:48:34.6514||DEBUG|Egoal.BackgroundJobs.BackgroundJobManager|BackgroundJobManager is starting. |url: |action: 
+2020-07-15 09:48:34.7162||DEBUG|Egoal.WeChat.OAuth.RefreshAccessTokenWorker|RefreshAccessTokenWorker is starting. |url: |action: 
+2020-07-15 09:48:34.8119||DEBUG|Egoal.Invoice.GuangDongBaiWangJiuBin.RefreshAccessTokenWorker|RefreshAccessTokenWorker is starting. |url: |action: 
+2020-07-15 09:48:34.8564||DEBUG|Egoal.Redis.RewriteAofWorker|RewriteAofWorker is starting. |url: |action: 
+2020-07-15 09:48:35.3177||ERROR|Egoal.Invoice.GuangDongBaiWangJiuBin.InvoiceService|Response status code does not indicate success: 404 (Not Found).--<?xml version="1.0" encoding="gbk"?><business id="YHYZ" comment="用户验证"><user lxdm="用户类型"><name>554433221100001</name><sn>F96DFEE0B0D98180AFCC9551209A0DB7B3388B08732AB3E43878232945D4C02B6B00DC122B8DB718C8C72CEB4FC03576D97C8AF3FB90B4D6A7CE26F42E50D087B634902AEF33072C</sn></user></business>-- |url: |action: 
+2020-07-15 09:48:35.3177||ERROR|Egoal.WeChat.OAuth.RefreshAccessTokenWorker|
+HttpRequestException:Response status code does not indicate success: 404 (Not Found).
+StackTrace:
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at System.Net.Http.HttpClient.GetByteArrayAsyncCore(Task`1 getTask)
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url, Encoding encoding) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 38
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 33
+   at Egoal.WeChat.OAuth.OAuthApi.GetAccessTokenAsync() in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\OAuthApi.cs:line 29
+   at Egoal.WeChat.OAuth.RefreshAccessTokenWorker.DoWorkAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\RefreshAccessTokenWorker.cs:line 29
+   at Egoal.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.ExecuteAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:line 33
+ |url: |action: 
+2020-07-15 09:48:56.2744||INFO|Egoal.WeChat.OAuth.OAuthApi|https://api.weixin.qq.com/sns/jscode2session?appid=wx6b88b58124b3f2b3&secret=62759de6366f4c519ba764848100a312&js_code=071HoaL80AxIJC1uVuJ80a1bL80HoaLs&grant_type=authorization_code--{"session_key":"MMVAdGIMvHVVW4Y3P6GCPw==","openid":"o1rq-4vWM753vuyYe7ZpyjHD9fU0"} |url: http://192.168.1.64/member/LoginFromWechatMiniProgramAsync|action: LoginFromWechatMiniProgramAsync
+2020-07-15 09:49:39.0360||ERROR|Egoal.Members.MemberAppService|
+NullReferenceException:Object reference not set to an instance of an object.
+StackTrace:
+   at Egoal.Members.MemberAppService.BuildLoginOutputAsync(Member member, String openId, Nullable`1 customerId, Boolean withGuider) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Application\Members\MemberAppService.cs:line 285
+   at Egoal.Members.MemberAppService.LoginFromWechatMiniProgramAsync(WechatMiniProgramLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Application\Members\MemberAppService.cs:line 178
+   at Egoal.Web.Api.Controllers.MemberController.LoginFromWechatMiniProgramAsync(WechatMiniProgramLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Web.Api\Controllers\MemberController.cs:line 41
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+ |url: http://192.168.1.64/member/LoginFromWechatMiniProgramAsync|action: LoginFromWechatMiniProgramAsync
+2020-07-15 09:49:49.1773||DEBUG|Egoal.Web.Api.Program|init main |url: |action: 
+2020-07-15 09:49:53.0346||ERROR|Egoal.Settings.SettingAppService|
+WindowsCryptographicException:指定的网络密码不正确。
+StackTrace:
+   at Internal.Cryptography.Pal.CertificatePal.FilterPFXStore(Byte[] rawData, SafePasswordHandle password, PfxCertStoreFlags pfxCertStoreFlags)
+   at Internal.Cryptography.Pal.CertificatePal.FromBlobOrFile(Byte[] rawData, String fileName, SafePasswordHandle password, X509KeyStorageFlags keyStorageFlags)
+   at System.Security.Cryptography.X509Certificates.X509Certificate..ctor(Byte[] rawData, String password, X509KeyStorageFlags keyStorageFlags)
+   at System.Security.Cryptography.X509Certificates.X509Certificate2..ctor(Byte[] rawData, String password)
+   at Egoal.Settings.SettingAppService.ConfigWeChatOptionsAsync() in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Application\Settings\SettingAppService.cs:line 76
+ |url: |action: 
+2020-07-15 09:49:54.0796||DEBUG|Egoal.BackgroundJobs.BackgroundJobManager|BackgroundJobManager is starting. |url: |action: 
+2020-07-15 09:49:54.1539||DEBUG|Egoal.WeChat.OAuth.RefreshAccessTokenWorker|RefreshAccessTokenWorker is starting. |url: |action: 
+2020-07-15 09:49:54.2804||DEBUG|Egoal.Invoice.GuangDongBaiWangJiuBin.RefreshAccessTokenWorker|RefreshAccessTokenWorker is starting. |url: |action: 
+2020-07-15 09:49:54.3219||DEBUG|Egoal.Redis.RewriteAofWorker|RewriteAofWorker is starting. |url: |action: 
+2020-07-15 09:49:54.6956||ERROR|Egoal.WeChat.OAuth.RefreshAccessTokenWorker|
+HttpRequestException:Response status code does not indicate success: 404 (Not Found).
+StackTrace:
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at System.Net.Http.HttpClient.GetByteArrayAsyncCore(Task`1 getTask)
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url, Encoding encoding) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 38
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 33
+   at Egoal.WeChat.OAuth.OAuthApi.GetAccessTokenAsync() in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\OAuthApi.cs:line 29
+   at Egoal.WeChat.OAuth.RefreshAccessTokenWorker.DoWorkAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\RefreshAccessTokenWorker.cs:line 29
+   at Egoal.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.ExecuteAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:line 33
+ |url: |action: 
+2020-07-15 09:49:54.7721||ERROR|Egoal.Invoice.GuangDongBaiWangJiuBin.InvoiceService|Response status code does not indicate success: 404 (Not Found).--<?xml version="1.0" encoding="gbk"?><business id="YHYZ" comment="用户验证"><user lxdm="用户类型"><name>554433221100001</name><sn>F96DFEE0B0D98180AFCC9551209A0DB7B3388B08732AB3E43878232945D4C02B6B00DC122B8DB718C8C72CEB4FC03576D97C8AF3FB90B4D6A7CE26F42E50D087B634902AEF33072C</sn></user></business>-- |url: |action: 
+2020-07-15 09:50:55.0358||INFO|Egoal.WeChat.OAuth.OAuthApi|https://api.weixin.qq.com/sns/jscode2session?appid=wx6b88b58124b3f2b3&secret=62759de6366f4c519ba764848100a312&js_code=011gr4MM14AY591vHLNM1d35MM1gr4Mn&grant_type=authorization_code--{"session_key":"T11pEoAt9HL6o2sHlrCTsA==","openid":"o1rq-4vWM753vuyYe7ZpyjHD9fU0"} |url: http://192.168.1.64/member/LoginFromWechatMiniProgramAsync|action: LoginFromWechatMiniProgramAsync
+2020-07-15 09:51:51.0199||DEBUG|Egoal.Web.Api.Program|init main |url: |action: 
+2020-07-15 09:51:55.5155||ERROR|Egoal.Settings.SettingAppService|
+WindowsCryptographicException:指定的网络密码不正确。
+StackTrace:
+   at Internal.Cryptography.Pal.CertificatePal.FilterPFXStore(Byte[] rawData, SafePasswordHandle password, PfxCertStoreFlags pfxCertStoreFlags)
+   at Internal.Cryptography.Pal.CertificatePal.FromBlobOrFile(Byte[] rawData, String fileName, SafePasswordHandle password, X509KeyStorageFlags keyStorageFlags)
+   at System.Security.Cryptography.X509Certificates.X509Certificate..ctor(Byte[] rawData, String password, X509KeyStorageFlags keyStorageFlags)
+   at System.Security.Cryptography.X509Certificates.X509Certificate2..ctor(Byte[] rawData, String password)
+   at Egoal.Settings.SettingAppService.ConfigWeChatOptionsAsync() in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Application\Settings\SettingAppService.cs:line 76
+ |url: |action: 
+2020-07-15 09:51:56.6645||DEBUG|Egoal.BackgroundJobs.BackgroundJobManager|BackgroundJobManager is starting. |url: |action: 
+2020-07-15 09:51:56.7551||DEBUG|Egoal.WeChat.OAuth.RefreshAccessTokenWorker|RefreshAccessTokenWorker is starting. |url: |action: 
+2020-07-15 09:51:56.8467||DEBUG|Egoal.Invoice.GuangDongBaiWangJiuBin.RefreshAccessTokenWorker|RefreshAccessTokenWorker is starting. |url: |action: 
+2020-07-15 09:51:56.8865||DEBUG|Egoal.Redis.RewriteAofWorker|RewriteAofWorker is starting. |url: |action: 
+2020-07-15 09:51:57.2182||ERROR|Egoal.WeChat.OAuth.RefreshAccessTokenWorker|
+HttpRequestException:Response status code does not indicate success: 404 (Not Found).
+StackTrace:
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at System.Net.Http.HttpClient.GetByteArrayAsyncCore(Task`1 getTask)
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url, Encoding encoding) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 38
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 33
+   at Egoal.WeChat.OAuth.OAuthApi.GetAccessTokenAsync() in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\OAuthApi.cs:line 29
+   at Egoal.WeChat.OAuth.RefreshAccessTokenWorker.DoWorkAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\RefreshAccessTokenWorker.cs:line 29
+   at Egoal.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.ExecuteAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:line 33
+ |url: |action: 
+2020-07-15 09:51:57.3648||ERROR|Egoal.Invoice.GuangDongBaiWangJiuBin.InvoiceService|Response status code does not indicate success: 404 (Not Found).--<?xml version="1.0" encoding="gbk"?><business id="YHYZ" comment="用户验证"><user lxdm="用户类型"><name>554433221100001</name><sn>F96DFEE0B0D98180AFCC9551209A0DB7B3388B08732AB3E43878232945D4C02B6B00DC122B8DB718C8C72CEB4FC03576D97C8AF3FB90B4D6A7CE26F42E50D087B634902AEF33072C</sn></user></business>-- |url: |action: 
+2020-07-15 09:52:06.6482||INFO|Egoal.WeChat.OAuth.OAuthApi|https://api.weixin.qq.com/sns/jscode2session?appid=wx6b88b58124b3f2b3&secret=62759de6366f4c519ba764848100a312&js_code=0011pshO0XVSS62GXphO0ARrhO01pshd&grant_type=authorization_code--{"session_key":"T11pEoAt9HL6o2sHlrCTsA==","openid":"o1rq-4vWM753vuyYe7ZpyjHD9fU0"} |url: http://192.168.1.64/member/LoginFromWechatMiniProgramAsync|action: LoginFromWechatMiniProgramAsync
+2020-07-15 09:53:11.1133||ERROR|Egoal.Members.MemberAppService|
+ArgumentNullException:Value cannot be null.
+Parameter name: Code不能为空
+StackTrace:
+   at Egoal.Members.MemberAppService.LoginFromWechatOffiaccountAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Application\Members\MemberAppService.cs:line 101
+   at Egoal.Web.Api.Controllers.MemberController.LoginFromWeChatAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Web.Api\Controllers\MemberController.cs:line 27
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+ |url: http://192.168.1.64/member/LoginFromWeChatAsync|action: LoginFromWeChatAsync
+2020-07-15 09:56:11.0380||ERROR|Egoal.Members.MemberAppService|
+ArgumentNullException:Value cannot be null.
+Parameter name: Code不能为空
+StackTrace:
+   at Egoal.Members.MemberAppService.LoginFromWechatOffiaccountAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Application\Members\MemberAppService.cs:line 101
+   at Egoal.Web.Api.Controllers.MemberController.LoginFromWeChatAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Web.Api\Controllers\MemberController.cs:line 27
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+ |url: http://192.168.1.64/member/LoginFromWeChatAsync|action: LoginFromWeChatAsync
+2020-07-15 09:56:13.4008||ERROR|Egoal.Members.MemberAppService|
+ArgumentNullException:Value cannot be null.
+Parameter name: Code不能为空
+StackTrace:
+   at Egoal.Members.MemberAppService.LoginFromWechatOffiaccountAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Application\Members\MemberAppService.cs:line 101
+   at Egoal.Web.Api.Controllers.MemberController.LoginFromWeChatAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Web.Api\Controllers\MemberController.cs:line 27
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+ |url: http://192.168.1.64/member/LoginFromWeChatAsync|action: LoginFromWeChatAsync
+2020-07-15 09:58:23.7220||ERROR|Egoal.Members.MemberAppService|
+ArgumentNullException:Value cannot be null.
+Parameter name: Code不能为空
+StackTrace:
+   at Egoal.Members.MemberAppService.LoginFromWechatOffiaccountAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Application\Members\MemberAppService.cs:line 101
+   at Egoal.Web.Api.Controllers.MemberController.LoginFromWeChatAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Web.Api\Controllers\MemberController.cs:line 27
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+ |url: http://192.168.1.64/member/LoginFromWeChatAsync|action: LoginFromWeChatAsync
+2020-07-15 11:35:29.8391||DEBUG|Egoal.Web.Api.Program|init main |url: |action: 
+2020-07-15 11:35:41.3305||ERROR|Egoal.Settings.SettingAppService|
+WindowsCryptographicException:指定的网络密码不正确。
+StackTrace:
+   at Internal.Cryptography.Pal.CertificatePal.FilterPFXStore(Byte[] rawData, SafePasswordHandle password, PfxCertStoreFlags pfxCertStoreFlags)
+   at Internal.Cryptography.Pal.CertificatePal.FromBlobOrFile(Byte[] rawData, String fileName, SafePasswordHandle password, X509KeyStorageFlags keyStorageFlags)
+   at System.Security.Cryptography.X509Certificates.X509Certificate..ctor(Byte[] rawData, String password, X509KeyStorageFlags keyStorageFlags)
+   at System.Security.Cryptography.X509Certificates.X509Certificate2..ctor(Byte[] rawData, String password)
+   at Egoal.Settings.SettingAppService.ConfigWeChatOptionsAsync() in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Application\Settings\SettingAppService.cs:line 76
+ |url: |action: 
+2020-07-15 11:35:42.8763||DEBUG|Egoal.BackgroundJobs.BackgroundJobManager|BackgroundJobManager is starting. |url: |action: 
+2020-07-15 11:35:42.9981||DEBUG|Egoal.WeChat.OAuth.RefreshAccessTokenWorker|RefreshAccessTokenWorker is starting. |url: |action: 
+2020-07-15 11:35:43.1501||DEBUG|Egoal.Invoice.GuangDongBaiWangJiuBin.RefreshAccessTokenWorker|RefreshAccessTokenWorker is starting. |url: |action: 
+2020-07-15 11:35:43.2119||DEBUG|Egoal.Redis.RewriteAofWorker|RewriteAofWorker is starting. |url: |action: 
+2020-07-15 11:35:43.8413||ERROR|Egoal.Invoice.GuangDongBaiWangJiuBin.InvoiceService|Response status code does not indicate success: 404 (Not Found).--<?xml version="1.0" encoding="gbk"?><business id="YHYZ" comment="用户验证"><user lxdm="用户类型"><name>554433221100001</name><sn>F96DFEE0B0D98180AFCC9551209A0DB7B3388B08732AB3E43878232945D4C02B6B00DC122B8DB718C8C72CEB4FC03576D97C8AF3FB90B4D6A7CE26F42E50D087B634902AEF33072C</sn></user></business>-- |url: |action: 
+2020-07-15 11:35:43.8670||ERROR|Egoal.WeChat.OAuth.RefreshAccessTokenWorker|
+HttpRequestException:Response status code does not indicate success: 404 (Not Found).
+StackTrace:
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at System.Net.Http.HttpClient.GetByteArrayAsyncCore(Task`1 getTask)
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url, Encoding encoding) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 38
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 33
+   at Egoal.WeChat.OAuth.OAuthApi.GetAccessTokenAsync() in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\OAuthApi.cs:line 29
+   at Egoal.WeChat.OAuth.RefreshAccessTokenWorker.DoWorkAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\RefreshAccessTokenWorker.cs:line 29
+   at Egoal.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.ExecuteAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:line 33
+ |url: |action: 
+2020-07-15 11:52:36.3484||ERROR|Egoal.Invoice.GuangDongBaiWangJiuBin.InvoiceService|Response status code does not indicate success: 404 (Not Found).--<?xml version="1.0" encoding="gbk"?><business id="YHYZ" comment="用户验证"><user lxdm="用户类型"><name>554433221100001</name><sn>F96DFEE0B0D98180AFCC9551209A0DB7B3388B08732AB3E43878232945D4C02B6B00DC122B8DB718C8C72CEB4FC03576D97C8AF3FB90B4D6A7CE26F42E50D087B634902AEF33072C</sn></user></business>-- |url: |action: 
+2020-07-15 11:52:36.3484||ERROR|Egoal.Members.MemberAppService|
+ArgumentNullException:Value cannot be null.
+Parameter name: Code不能为空
+StackTrace:
+   at Egoal.Members.MemberAppService.LoginFromWechatOffiaccountAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Application\Members\MemberAppService.cs:line 101
+   at Egoal.Web.Api.Controllers.MemberController.LoginFromWeChatAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Web.Api\Controllers\MemberController.cs:line 27
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+ |url: http://192.168.1.64/member/LoginFromWeChatAsync|action: LoginFromWeChatAsync
+2020-07-15 11:52:36.3971||ERROR|Egoal.Members.MemberAppService|
+ArgumentNullException:Value cannot be null.
+Parameter name: Code不能为空
+StackTrace:
+   at Egoal.Members.MemberAppService.LoginFromWechatOffiaccountAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Application\Members\MemberAppService.cs:line 101
+   at Egoal.Web.Api.Controllers.MemberController.LoginFromWeChatAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Web.Api\Controllers\MemberController.cs:line 27
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+ |url: http://192.168.1.64/member/LoginFromWeChatAsync|action: LoginFromWeChatAsync
+2020-07-15 11:52:36.4418||ERROR|Egoal.WeChat.OAuth.RefreshAccessTokenWorker|
+HttpRequestException:Response status code does not indicate success: 404 (Not Found).
+StackTrace:
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at System.Net.Http.HttpClient.GetByteArrayAsyncCore(Task`1 getTask)
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url, Encoding encoding) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 38
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 33
+   at Egoal.WeChat.OAuth.OAuthApi.GetAccessTokenAsync() in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\OAuthApi.cs:line 29
+   at Egoal.WeChat.OAuth.RefreshAccessTokenWorker.DoWorkAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\RefreshAccessTokenWorker.cs:line 29
+   at Egoal.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.ExecuteAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:line 33
+ |url: |action: 
+2020-07-15 11:53:13.2465||ERROR|Egoal.Members.MemberAppService|
+ArgumentNullException:Value cannot be null.
+Parameter name: Code不能为空
+StackTrace:
+   at Egoal.Members.MemberAppService.LoginFromWechatOffiaccountAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Application\Members\MemberAppService.cs:line 101
+   at Egoal.Web.Api.Controllers.MemberController.LoginFromWeChatAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Web.Api\Controllers\MemberController.cs:line 27
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+ |url: http://192.168.1.64/member/LoginFromWeChatAsync|action: LoginFromWeChatAsync
+2020-07-15 11:53:26.5988||ERROR|Egoal.Members.MemberAppService|
+ArgumentNullException:Value cannot be null.
+Parameter name: Code Required
+StackTrace:
+   at Egoal.Members.MemberAppService.LoginFromWechatOffiaccountAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Application\Members\MemberAppService.cs:line 101
+   at Egoal.Web.Api.Controllers.MemberController.LoginFromWeChatAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Web.Api\Controllers\MemberController.cs:line 27
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+ |url: http://192.168.1.64/member/LoginFromWeChatAsync|action: LoginFromWeChatAsync
+2020-07-15 11:54:05.3152||ERROR|Egoal.Members.MemberAppService|
+ArgumentNullException:Value cannot be null.
+Parameter name: Code不能为空
+StackTrace:
+   at Egoal.Members.MemberAppService.LoginFromWechatOffiaccountAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Application\Members\MemberAppService.cs:line 101
+   at Egoal.Web.Api.Controllers.MemberController.LoginFromWeChatAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Web.Api\Controllers\MemberController.cs:line 27
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+ |url: http://192.168.1.64/member/LoginFromWeChatAsync|action: LoginFromWeChatAsync
+2020-07-15 11:54:30.9635||ERROR|Egoal.Members.MemberAppService|
+ArgumentNullException:Value cannot be null.
+Parameter name: Code不能为空
+StackTrace:
+   at Egoal.Members.MemberAppService.LoginFromWechatOffiaccountAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Application\Members\MemberAppService.cs:line 101
+   at Egoal.Web.Api.Controllers.MemberController.LoginFromWeChatAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Web.Api\Controllers\MemberController.cs:line 27
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+ |url: http://192.168.1.64/member/LoginFromWeChatAsync|action: LoginFromWeChatAsync
+2020-07-15 11:54:49.9013||ERROR|Egoal.Members.MemberAppService|
+ArgumentNullException:Value cannot be null.
+Parameter name: Code不能为空
+StackTrace:
+   at Egoal.Members.MemberAppService.LoginFromWechatOffiaccountAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Application\Members\MemberAppService.cs:line 101
+   at Egoal.Web.Api.Controllers.MemberController.LoginFromWeChatAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Web.Api\Controllers\MemberController.cs:line 27
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+ |url: http://192.168.1.64/member/LoginFromWeChatAsync|action: LoginFromWeChatAsync
+2020-07-15 11:55:29.5475||ERROR|Egoal.Members.MemberAppService|
+ArgumentNullException:Value cannot be null.
+Parameter name: Code不能为空
+StackTrace:
+   at Egoal.Members.MemberAppService.LoginFromWechatOffiaccountAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Application\Members\MemberAppService.cs:line 101
+   at Egoal.Web.Api.Controllers.MemberController.LoginFromWeChatAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Web.Api\Controllers\MemberController.cs:line 27
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+ |url: http://192.168.1.64/member/LoginFromWeChatAsync|action: LoginFromWeChatAsync
+2020-07-15 11:55:32.9578||ERROR|Egoal.Members.MemberAppService|
+ArgumentNullException:Value cannot be null.
+Parameter name: Code不能为空
+StackTrace:
+   at Egoal.Members.MemberAppService.LoginFromWechatOffiaccountAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Application\Members\MemberAppService.cs:line 101
+   at Egoal.Web.Api.Controllers.MemberController.LoginFromWeChatAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Web.Api\Controllers\MemberController.cs:line 27
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+ |url: http://192.168.1.64/member/LoginFromWeChatAsync|action: LoginFromWeChatAsync
+2020-07-15 11:55:47.5864||ERROR|Egoal.Members.MemberAppService|
+ArgumentNullException:Value cannot be null.
+Parameter name: Code不能为空
+StackTrace:
+   at Egoal.Members.MemberAppService.LoginFromWechatOffiaccountAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Application\Members\MemberAppService.cs:line 101
+   at Egoal.Web.Api.Controllers.MemberController.LoginFromWeChatAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Web.Api\Controllers\MemberController.cs:line 27
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+ |url: http://192.168.1.64/member/LoginFromWeChatAsync|action: LoginFromWeChatAsync
+2020-07-15 11:59:27.0520||ERROR|Egoal.Members.MemberAppService|
+ArgumentNullException:Value cannot be null.
+Parameter name: Code不能为空
+StackTrace:
+   at Egoal.Members.MemberAppService.LoginFromWechatOffiaccountAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Application\Members\MemberAppService.cs:line 101
+   at Egoal.Web.Api.Controllers.MemberController.LoginFromWeChatAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Web.Api\Controllers\MemberController.cs:line 27
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+ |url: http://192.168.1.64/member/LoginFromWeChatAsync|action: LoginFromWeChatAsync
+2020-07-15 11:59:48.7075||ERROR|Egoal.Members.MemberAppService|
+ArgumentNullException:Value cannot be null.
+Parameter name: Code不能为空
+StackTrace:
+   at Egoal.Members.MemberAppService.LoginFromWechatOffiaccountAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Application\Members\MemberAppService.cs:line 101
+   at Egoal.Web.Api.Controllers.MemberController.LoginFromWeChatAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Web.Api\Controllers\MemberController.cs:line 27
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+ |url: http://192.168.1.64/member/LoginFromWeChatAsync|action: LoginFromWeChatAsync
+2020-07-15 11:59:56.9745||ERROR|Egoal.Members.MemberAppService|
+ArgumentNullException:Value cannot be null.
+Parameter name: Code不能为空
+StackTrace:
+   at Egoal.Members.MemberAppService.LoginFromWechatOffiaccountAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Application\Members\MemberAppService.cs:line 101
+   at Egoal.Web.Api.Controllers.MemberController.LoginFromWeChatAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Web.Api\Controllers\MemberController.cs:line 27
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+ |url: http://192.168.1.64/member/LoginFromWeChatAsync|action: LoginFromWeChatAsync
+2020-07-15 12:00:13.6828||ERROR|Egoal.Members.MemberAppService|
+ArgumentNullException:Value cannot be null.
+Parameter name: Code不能为空
+StackTrace:
+   at Egoal.Members.MemberAppService.LoginFromWechatOffiaccountAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Application\Members\MemberAppService.cs:line 101
+   at Egoal.Web.Api.Controllers.MemberController.LoginFromWeChatAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Web.Api\Controllers\MemberController.cs:line 27
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+ |url: http://192.168.1.64/member/LoginFromWeChatAsync|action: LoginFromWeChatAsync
+2020-07-15 12:00:21.6305||ERROR|Egoal.Members.MemberAppService|
+ArgumentNullException:Value cannot be null.
+Parameter name: Code不能为空
+StackTrace:
+   at Egoal.Members.MemberAppService.LoginFromWechatOffiaccountAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Application\Members\MemberAppService.cs:line 101
+   at Egoal.Web.Api.Controllers.MemberController.LoginFromWeChatAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Web.Api\Controllers\MemberController.cs:line 27
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+ |url: http://192.168.1.64/member/LoginFromWeChatAsync|action: LoginFromWeChatAsync
+2020-07-15 12:00:47.5955||ERROR|Egoal.Members.MemberAppService|
+ArgumentNullException:Value cannot be null.
+Parameter name: Code不能为空
+StackTrace:
+   at Egoal.Members.MemberAppService.LoginFromWechatOffiaccountAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Application\Members\MemberAppService.cs:line 101
+   at Egoal.Web.Api.Controllers.MemberController.LoginFromWeChatAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Web.Api\Controllers\MemberController.cs:line 27
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+ |url: http://192.168.1.64/member/LoginFromWeChatAsync|action: LoginFromWeChatAsync
+2020-07-15 12:01:01.1516||ERROR|Egoal.Members.MemberAppService|
+ArgumentNullException:Value cannot be null.
+Parameter name: Code不能为空
+StackTrace:
+   at Egoal.Members.MemberAppService.LoginFromWechatOffiaccountAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Application\Members\MemberAppService.cs:line 101
+   at Egoal.Web.Api.Controllers.MemberController.LoginFromWeChatAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Web.Api\Controllers\MemberController.cs:line 27
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+ |url: http://192.168.1.64/member/LoginFromWeChatAsync|action: LoginFromWeChatAsync
+2020-07-15 12:02:36.7052||ERROR|Egoal.Invoice.GuangDongBaiWangJiuBin.InvoiceService|Response status code does not indicate success: 404 (Not Found).--<?xml version="1.0" encoding="gbk"?><business id="YHYZ" comment="用户验证"><user lxdm="用户类型"><name>554433221100001</name><sn>F96DFEE0B0D98180AFCC9551209A0DB7B3388B08732AB3E43878232945D4C02B6B00DC122B8DB718C8C72CEB4FC03576D97C8AF3FB90B4D6A7CE26F42E50D087B634902AEF33072C</sn></user></business>-- |url: |action: 
+2020-07-15 12:02:36.9026||ERROR|Egoal.WeChat.OAuth.RefreshAccessTokenWorker|
+HttpRequestException:Response status code does not indicate success: 404 (Not Found).
+StackTrace:
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at System.Net.Http.HttpClient.GetByteArrayAsyncCore(Task`1 getTask)
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url, Encoding encoding) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 38
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 33
+   at Egoal.WeChat.OAuth.OAuthApi.GetAccessTokenAsync() in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\OAuthApi.cs:line 29
+   at Egoal.WeChat.OAuth.RefreshAccessTokenWorker.DoWorkAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\RefreshAccessTokenWorker.cs:line 29
+   at Egoal.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.ExecuteAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:line 33
+ |url: |action: 
+2020-07-15 12:12:37.0553||ERROR|Egoal.Invoice.GuangDongBaiWangJiuBin.InvoiceService|Response status code does not indicate success: 404 (Not Found).--<?xml version="1.0" encoding="gbk"?><business id="YHYZ" comment="用户验证"><user lxdm="用户类型"><name>554433221100001</name><sn>F96DFEE0B0D98180AFCC9551209A0DB7B3388B08732AB3E43878232945D4C02B6B00DC122B8DB718C8C72CEB4FC03576D97C8AF3FB90B4D6A7CE26F42E50D087B634902AEF33072C</sn></user></business>-- |url: |action: 
+2020-07-15 12:12:37.2647||ERROR|Egoal.WeChat.OAuth.RefreshAccessTokenWorker|
+HttpRequestException:Response status code does not indicate success: 404 (Not Found).
+StackTrace:
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at System.Net.Http.HttpClient.GetByteArrayAsyncCore(Task`1 getTask)
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url, Encoding encoding) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 38
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 33
+   at Egoal.WeChat.OAuth.OAuthApi.GetAccessTokenAsync() in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\OAuthApi.cs:line 29
+   at Egoal.WeChat.OAuth.RefreshAccessTokenWorker.DoWorkAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\RefreshAccessTokenWorker.cs:line 29
+   at Egoal.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.ExecuteAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:line 33
+ |url: |action: 
+2020-07-15 12:22:37.4204||ERROR|Egoal.Invoice.GuangDongBaiWangJiuBin.InvoiceService|Response status code does not indicate success: 404 (Not Found).--<?xml version="1.0" encoding="gbk"?><business id="YHYZ" comment="用户验证"><user lxdm="用户类型"><name>554433221100001</name><sn>F96DFEE0B0D98180AFCC9551209A0DB7B3388B08732AB3E43878232945D4C02B6B00DC122B8DB718C8C72CEB4FC03576D97C8AF3FB90B4D6A7CE26F42E50D087B634902AEF33072C</sn></user></business>-- |url: |action: 
+2020-07-15 12:22:37.6308||ERROR|Egoal.WeChat.OAuth.RefreshAccessTokenWorker|
+HttpRequestException:Response status code does not indicate success: 404 (Not Found).
+StackTrace:
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at System.Net.Http.HttpClient.GetByteArrayAsyncCore(Task`1 getTask)
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url, Encoding encoding) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 38
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 33
+   at Egoal.WeChat.OAuth.OAuthApi.GetAccessTokenAsync() in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\OAuthApi.cs:line 29
+   at Egoal.WeChat.OAuth.RefreshAccessTokenWorker.DoWorkAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\RefreshAccessTokenWorker.cs:line 29
+   at Egoal.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.ExecuteAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:line 33
+ |url: |action: 
+2020-07-15 12:32:37.7761||ERROR|Egoal.Invoice.GuangDongBaiWangJiuBin.InvoiceService|Response status code does not indicate success: 404 (Not Found).--<?xml version="1.0" encoding="gbk"?><business id="YHYZ" comment="用户验证"><user lxdm="用户类型"><name>554433221100001</name><sn>F96DFEE0B0D98180AFCC9551209A0DB7B3388B08732AB3E43878232945D4C02B6B00DC122B8DB718C8C72CEB4FC03576D97C8AF3FB90B4D6A7CE26F42E50D087B634902AEF33072C</sn></user></business>-- |url: |action: 
+2020-07-15 12:32:38.0598||ERROR|Egoal.WeChat.OAuth.RefreshAccessTokenWorker|
+HttpRequestException:Response status code does not indicate success: 404 (Not Found).
+StackTrace:
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at System.Net.Http.HttpClient.GetByteArrayAsyncCore(Task`1 getTask)
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url, Encoding encoding) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 38
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 33
+   at Egoal.WeChat.OAuth.OAuthApi.GetAccessTokenAsync() in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\OAuthApi.cs:line 29
+   at Egoal.WeChat.OAuth.RefreshAccessTokenWorker.DoWorkAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\RefreshAccessTokenWorker.cs:line 29
+   at Egoal.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.ExecuteAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:line 33
+ |url: |action: 
+2020-07-15 12:42:38.2263||ERROR|Egoal.Invoice.GuangDongBaiWangJiuBin.InvoiceService|Response status code does not indicate success: 404 (Not Found).--<?xml version="1.0" encoding="gbk"?><business id="YHYZ" comment="用户验证"><user lxdm="用户类型"><name>554433221100001</name><sn>F96DFEE0B0D98180AFCC9551209A0DB7B3388B08732AB3E43878232945D4C02B6B00DC122B8DB718C8C72CEB4FC03576D97C8AF3FB90B4D6A7CE26F42E50D087B634902AEF33072C</sn></user></business>-- |url: |action: 
+2020-07-15 12:42:38.4768||ERROR|Egoal.WeChat.OAuth.RefreshAccessTokenWorker|
+HttpRequestException:Response status code does not indicate success: 404 (Not Found).
+StackTrace:
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at System.Net.Http.HttpClient.GetByteArrayAsyncCore(Task`1 getTask)
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url, Encoding encoding) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 38
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 33
+   at Egoal.WeChat.OAuth.OAuthApi.GetAccessTokenAsync() in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\OAuthApi.cs:line 29
+   at Egoal.WeChat.OAuth.RefreshAccessTokenWorker.DoWorkAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\RefreshAccessTokenWorker.cs:line 29
+   at Egoal.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.ExecuteAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:line 33
+ |url: |action: 
+2020-07-15 12:52:38.6746||ERROR|Egoal.Invoice.GuangDongBaiWangJiuBin.InvoiceService|Response status code does not indicate success: 404 (Not Found).--<?xml version="1.0" encoding="gbk"?><business id="YHYZ" comment="用户验证"><user lxdm="用户类型"><name>554433221100001</name><sn>F96DFEE0B0D98180AFCC9551209A0DB7B3388B08732AB3E43878232945D4C02B6B00DC122B8DB718C8C72CEB4FC03576D97C8AF3FB90B4D6A7CE26F42E50D087B634902AEF33072C</sn></user></business>-- |url: |action: 
+2020-07-15 12:52:38.9687||ERROR|Egoal.WeChat.OAuth.RefreshAccessTokenWorker|
+HttpRequestException:Response status code does not indicate success: 404 (Not Found).
+StackTrace:
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at System.Net.Http.HttpClient.GetByteArrayAsyncCore(Task`1 getTask)
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url, Encoding encoding) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 38
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 33
+   at Egoal.WeChat.OAuth.OAuthApi.GetAccessTokenAsync() in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\OAuthApi.cs:line 29
+   at Egoal.WeChat.OAuth.RefreshAccessTokenWorker.DoWorkAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\RefreshAccessTokenWorker.cs:line 29
+   at Egoal.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.ExecuteAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:line 33
+ |url: |action: 
+2020-07-15 13:02:39.0848||ERROR|Egoal.Invoice.GuangDongBaiWangJiuBin.InvoiceService|Response status code does not indicate success: 404 (Not Found).--<?xml version="1.0" encoding="gbk"?><business id="YHYZ" comment="用户验证"><user lxdm="用户类型"><name>554433221100001</name><sn>F96DFEE0B0D98180AFCC9551209A0DB7B3388B08732AB3E43878232945D4C02B6B00DC122B8DB718C8C72CEB4FC03576D97C8AF3FB90B4D6A7CE26F42E50D087B634902AEF33072C</sn></user></business>-- |url: |action: 
+2020-07-15 13:02:42.1389||ERROR|Egoal.WeChat.OAuth.RefreshAccessTokenWorker|
+HttpRequestException:Response status code does not indicate success: 404 (Not Found).
+StackTrace:
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at System.Net.Http.HttpClient.GetByteArrayAsyncCore(Task`1 getTask)
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url, Encoding encoding) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 38
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 33
+   at Egoal.WeChat.OAuth.OAuthApi.GetAccessTokenAsync() in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\OAuthApi.cs:line 29
+   at Egoal.WeChat.OAuth.RefreshAccessTokenWorker.DoWorkAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\RefreshAccessTokenWorker.cs:line 29
+   at Egoal.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.ExecuteAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:line 33
+ |url: |action: 
+2020-07-15 13:12:39.3884||ERROR|Egoal.Invoice.GuangDongBaiWangJiuBin.InvoiceService|Response status code does not indicate success: 404 (Not Found).--<?xml version="1.0" encoding="gbk"?><business id="YHYZ" comment="用户验证"><user lxdm="用户类型"><name>554433221100001</name><sn>F96DFEE0B0D98180AFCC9551209A0DB7B3388B08732AB3E43878232945D4C02B6B00DC122B8DB718C8C72CEB4FC03576D97C8AF3FB90B4D6A7CE26F42E50D087B634902AEF33072C</sn></user></business>-- |url: |action: 
+2020-07-15 13:12:42.4716||ERROR|Egoal.WeChat.OAuth.RefreshAccessTokenWorker|
+HttpRequestException:Response status code does not indicate success: 404 (Not Found).
+StackTrace:
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at System.Net.Http.HttpClient.GetByteArrayAsyncCore(Task`1 getTask)
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url, Encoding encoding) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 38
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 33
+   at Egoal.WeChat.OAuth.OAuthApi.GetAccessTokenAsync() in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\OAuthApi.cs:line 29
+   at Egoal.WeChat.OAuth.RefreshAccessTokenWorker.DoWorkAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\RefreshAccessTokenWorker.cs:line 29
+   at Egoal.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.ExecuteAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:line 33
+ |url: |action: 
+2020-07-15 13:22:39.7729||ERROR|Egoal.Invoice.GuangDongBaiWangJiuBin.InvoiceService|Response status code does not indicate success: 404 (Not Found).--<?xml version="1.0" encoding="gbk"?><business id="YHYZ" comment="用户验证"><user lxdm="用户类型"><name>554433221100001</name><sn>F96DFEE0B0D98180AFCC9551209A0DB7B3388B08732AB3E43878232945D4C02B6B00DC122B8DB718C8C72CEB4FC03576D97C8AF3FB90B4D6A7CE26F42E50D087B634902AEF33072C</sn></user></business>-- |url: |action: 
+2020-07-15 13:22:42.8283||ERROR|Egoal.WeChat.OAuth.RefreshAccessTokenWorker|
+HttpRequestException:Response status code does not indicate success: 404 (Not Found).
+StackTrace:
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at System.Net.Http.HttpClient.GetByteArrayAsyncCore(Task`1 getTask)
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url, Encoding encoding) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 38
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 33
+   at Egoal.WeChat.OAuth.OAuthApi.GetAccessTokenAsync() in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\OAuthApi.cs:line 29
+   at Egoal.WeChat.OAuth.RefreshAccessTokenWorker.DoWorkAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\RefreshAccessTokenWorker.cs:line 29
+   at Egoal.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.ExecuteAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:line 33
+ |url: |action: 
+2020-07-15 13:32:40.1378||ERROR|Egoal.Invoice.GuangDongBaiWangJiuBin.InvoiceService|Response status code does not indicate success: 404 (Not Found).--<?xml version="1.0" encoding="gbk"?><business id="YHYZ" comment="用户验证"><user lxdm="用户类型"><name>554433221100001</name><sn>F96DFEE0B0D98180AFCC9551209A0DB7B3388B08732AB3E43878232945D4C02B6B00DC122B8DB718C8C72CEB4FC03576D97C8AF3FB90B4D6A7CE26F42E50D087B634902AEF33072C</sn></user></business>-- |url: |action: 
+2020-07-15 13:32:43.2413||ERROR|Egoal.WeChat.OAuth.RefreshAccessTokenWorker|
+HttpRequestException:Response status code does not indicate success: 404 (Not Found).
+StackTrace:
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at System.Net.Http.HttpClient.GetByteArrayAsyncCore(Task`1 getTask)
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url, Encoding encoding) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 38
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 33
+   at Egoal.WeChat.OAuth.OAuthApi.GetAccessTokenAsync() in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\OAuthApi.cs:line 29
+   at Egoal.WeChat.OAuth.RefreshAccessTokenWorker.DoWorkAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\RefreshAccessTokenWorker.cs:line 29
+   at Egoal.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.ExecuteAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:line 33
+ |url: |action: 
+2020-07-15 14:39:10.1837||DEBUG|Egoal.Web.Api.Program|init main |url: |action: 
+2020-07-15 14:39:15.5547||ERROR|Egoal.Settings.SettingAppService|
+WindowsCryptographicException:指定的网络密码不正确。
+StackTrace:
+   at Internal.Cryptography.Pal.CertificatePal.FilterPFXStore(Byte[] rawData, SafePasswordHandle password, PfxCertStoreFlags pfxCertStoreFlags)
+   at Internal.Cryptography.Pal.CertificatePal.FromBlobOrFile(Byte[] rawData, String fileName, SafePasswordHandle password, X509KeyStorageFlags keyStorageFlags)
+   at System.Security.Cryptography.X509Certificates.X509Certificate..ctor(Byte[] rawData, String password, X509KeyStorageFlags keyStorageFlags)
+   at System.Security.Cryptography.X509Certificates.X509Certificate2..ctor(Byte[] rawData, String password)
+   at Egoal.Settings.SettingAppService.ConfigWeChatOptionsAsync() in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Application\Settings\SettingAppService.cs:line 76
+ |url: |action: 
+2020-07-15 14:39:16.6313||DEBUG|Egoal.BackgroundJobs.BackgroundJobManager|BackgroundJobManager is starting. |url: |action: 
+2020-07-15 14:39:16.7043||DEBUG|Egoal.WeChat.OAuth.RefreshAccessTokenWorker|RefreshAccessTokenWorker is starting. |url: |action: 
+2020-07-15 14:39:16.7910||DEBUG|Egoal.Invoice.GuangDongBaiWangJiuBin.RefreshAccessTokenWorker|RefreshAccessTokenWorker is starting. |url: |action: 
+2020-07-15 14:39:16.8303||DEBUG|Egoal.Redis.RewriteAofWorker|RewriteAofWorker is starting. |url: |action: 
+2020-07-15 14:39:17.3332||ERROR|Egoal.Invoice.GuangDongBaiWangJiuBin.InvoiceService|Response status code does not indicate success: 404 (Not Found).--<?xml version="1.0" encoding="gbk"?><business id="YHYZ" comment="用户验证"><user lxdm="用户类型"><name>554433221100001</name><sn>F96DFEE0B0D98180AFCC9551209A0DB7B3388B08732AB3E43878232945D4C02B6B00DC122B8DB718C8C72CEB4FC03576D97C8AF3FB90B4D6A7CE26F42E50D087B634902AEF33072C</sn></user></business>-- |url: |action: 
+2020-07-15 14:39:17.3914||ERROR|Egoal.WeChat.OAuth.RefreshAccessTokenWorker|
+HttpRequestException:Response status code does not indicate success: 404 (Not Found).
+StackTrace:
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at System.Net.Http.HttpClient.GetByteArrayAsyncCore(Task`1 getTask)
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url, Encoding encoding) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 38
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 33
+   at Egoal.WeChat.OAuth.OAuthApi.GetAccessTokenAsync() in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\OAuthApi.cs:line 29
+   at Egoal.WeChat.OAuth.RefreshAccessTokenWorker.DoWorkAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\RefreshAccessTokenWorker.cs:line 29
+   at Egoal.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.ExecuteAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:line 33
+ |url: |action: 
+2020-07-15 14:49:17.7820||ERROR|Egoal.Invoice.GuangDongBaiWangJiuBin.InvoiceService|Response status code does not indicate success: 404 (Not Found).--<?xml version="1.0" encoding="gbk"?><business id="YHYZ" comment="用户验证"><user lxdm="用户类型"><name>554433221100001</name><sn>F96DFEE0B0D98180AFCC9551209A0DB7B3388B08732AB3E43878232945D4C02B6B00DC122B8DB718C8C72CEB4FC03576D97C8AF3FB90B4D6A7CE26F42E50D087B634902AEF33072C</sn></user></business>-- |url: |action: 
+2020-07-15 14:49:17.8921||ERROR|Egoal.WeChat.OAuth.RefreshAccessTokenWorker|
+HttpRequestException:Response status code does not indicate success: 404 (Not Found).
+StackTrace:
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at System.Net.Http.HttpClient.GetByteArrayAsyncCore(Task`1 getTask)
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url, Encoding encoding) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 38
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 33
+   at Egoal.WeChat.OAuth.OAuthApi.GetAccessTokenAsync() in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\OAuthApi.cs:line 29
+   at Egoal.WeChat.OAuth.RefreshAccessTokenWorker.DoWorkAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\RefreshAccessTokenWorker.cs:line 29
+   at Egoal.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.ExecuteAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:line 33
+ |url: |action: 
+2020-07-15 14:52:39.2473||ERROR|Egoal.Members.MemberAppService|
+ArgumentNullException:Value cannot be null.
+Parameter name: Code不能为空
+StackTrace:
+   at Egoal.Members.MemberAppService.LoginFromWechatOffiaccountAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Application\Members\MemberAppService.cs:line 101
+   at Egoal.Web.Api.Controllers.MemberController.LoginFromWeChatAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Web.Api\Controllers\MemberController.cs:line 27
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+ |url: http://192.168.1.64/member/LoginFromWeChatAsync|action: LoginFromWeChatAsync
+2020-07-15 14:55:09.3297||ERROR|Egoal.Members.MemberAppService|
+ArgumentNullException:Value cannot be null.
+Parameter name: Code不能为空
+StackTrace:
+   at Egoal.Members.MemberAppService.LoginFromWechatOffiaccountAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Application\Members\MemberAppService.cs:line 101
+   at Egoal.Web.Api.Controllers.MemberController.LoginFromWeChatAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Web.Api\Controllers\MemberController.cs:line 27
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+ |url: http://192.168.1.64/member/LoginFromWeChatAsync|action: LoginFromWeChatAsync
+2020-07-15 14:55:13.9568||ERROR|Egoal.WeChat.OAuth.OAuthApi|invalid code hints: [2GhdVL8gE-pnjPxa!]--https://api.weixin.qq.com/sns/oauth2/access_token?appid=wx44f7c1dc4eff1cca&secret=eec9eeaaf8f32d244e3673cb4524fd15&code=2134asdasd&grant_type=authorization_code--{"errcode":40029,"errmsg":"invalid code hints: [2GhdVL8gE-pnjPxa!]"} |url: http://192.168.1.64/member/LoginFromWeChatAsync|action: LoginFromWeChatAsync
+2020-07-15 14:55:14.1391||ERROR|Egoal.WeChat.ApiBase|
+ApiException:invalid code hints: [2GhdVL8gE-pnjPxa!]
+ |url: http://192.168.1.64/member/LoginFromWeChatAsync|action: LoginFromWeChatAsync
+2020-07-15 14:59:18.2029||ERROR|Egoal.Invoice.GuangDongBaiWangJiuBin.InvoiceService|Response status code does not indicate success: 404 (Not Found).--<?xml version="1.0" encoding="gbk"?><business id="YHYZ" comment="用户验证"><user lxdm="用户类型"><name>554433221100001</name><sn>F96DFEE0B0D98180AFCC9551209A0DB7B3388B08732AB3E43878232945D4C02B6B00DC122B8DB718C8C72CEB4FC03576D97C8AF3FB90B4D6A7CE26F42E50D087B634902AEF33072C</sn></user></business>-- |url: |action: 
+2020-07-15 14:59:18.3554||ERROR|Egoal.WeChat.OAuth.RefreshAccessTokenWorker|
+HttpRequestException:Response status code does not indicate success: 404 (Not Found).
+StackTrace:
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at System.Net.Http.HttpClient.GetByteArrayAsyncCore(Task`1 getTask)
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url, Encoding encoding) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 38
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 33
+   at Egoal.WeChat.OAuth.OAuthApi.GetAccessTokenAsync() in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\OAuthApi.cs:line 29
+   at Egoal.WeChat.OAuth.RefreshAccessTokenWorker.DoWorkAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\RefreshAccessTokenWorker.cs:line 29
+   at Egoal.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.ExecuteAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:line 33
+ |url: |action: 
+2020-07-15 15:06:02.5815||ERROR|Egoal.Members.MemberAppService|
+ArgumentNullException:Value cannot be null.
+Parameter name: Code不能为空
+StackTrace:
+   at Egoal.Members.MemberAppService.LoginFromWechatOffiaccountAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Application\Members\MemberAppService.cs:line 101
+   at Egoal.Web.Api.Controllers.MemberController.LoginFromWeChatAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Web.Api\Controllers\MemberController.cs:line 27
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+ |url: http://192.168.1.64/member/LoginFromWeChatAsync|action: LoginFromWeChatAsync
+2020-07-15 15:09:18.6823||ERROR|Egoal.Invoice.GuangDongBaiWangJiuBin.InvoiceService|Response status code does not indicate success: 404 (Not Found).--<?xml version="1.0" encoding="gbk"?><business id="YHYZ" comment="用户验证"><user lxdm="用户类型"><name>554433221100001</name><sn>F96DFEE0B0D98180AFCC9551209A0DB7B3388B08732AB3E43878232945D4C02B6B00DC122B8DB718C8C72CEB4FC03576D97C8AF3FB90B4D6A7CE26F42E50D087B634902AEF33072C</sn></user></business>-- |url: |action: 
+2020-07-15 15:09:18.7894||ERROR|Egoal.WeChat.OAuth.RefreshAccessTokenWorker|
+HttpRequestException:Response status code does not indicate success: 404 (Not Found).
+StackTrace:
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at System.Net.Http.HttpClient.GetByteArrayAsyncCore(Task`1 getTask)
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url, Encoding encoding) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 38
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 33
+   at Egoal.WeChat.OAuth.OAuthApi.GetAccessTokenAsync() in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\OAuthApi.cs:line 29
+   at Egoal.WeChat.OAuth.RefreshAccessTokenWorker.DoWorkAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\RefreshAccessTokenWorker.cs:line 29
+   at Egoal.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.ExecuteAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:line 33
+ |url: |action: 
+2020-07-15 15:11:53.8021||ERROR|Egoal.Members.MemberAppService|
+ArgumentNullException:Value cannot be null.
+Parameter name: Code不能为空
+StackTrace:
+   at Egoal.Members.MemberAppService.LoginFromWechatOffiaccountAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Application\Members\MemberAppService.cs:line 101
+   at Egoal.Web.Api.Controllers.MemberController.LoginFromWeChatAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Web.Api\Controllers\MemberController.cs:line 27
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+ |url: http://192.168.1.64/member/LoginFromWeChatAsync|action: LoginFromWeChatAsync
+2020-07-15 15:19:19.0563||ERROR|Egoal.Invoice.GuangDongBaiWangJiuBin.InvoiceService|Response status code does not indicate success: 404 (Not Found).--<?xml version="1.0" encoding="gbk"?><business id="YHYZ" comment="用户验证"><user lxdm="用户类型"><name>554433221100001</name><sn>F96DFEE0B0D98180AFCC9551209A0DB7B3388B08732AB3E43878232945D4C02B6B00DC122B8DB718C8C72CEB4FC03576D97C8AF3FB90B4D6A7CE26F42E50D087B634902AEF33072C</sn></user></business>-- |url: |action: 
+2020-07-15 15:19:19.1842||ERROR|Egoal.WeChat.OAuth.RefreshAccessTokenWorker|
+HttpRequestException:Response status code does not indicate success: 404 (Not Found).
+StackTrace:
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at System.Net.Http.HttpClient.GetByteArrayAsyncCore(Task`1 getTask)
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url, Encoding encoding) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 38
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 33
+   at Egoal.WeChat.OAuth.OAuthApi.GetAccessTokenAsync() in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\OAuthApi.cs:line 29
+   at Egoal.WeChat.OAuth.RefreshAccessTokenWorker.DoWorkAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\RefreshAccessTokenWorker.cs:line 29
+   at Egoal.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.ExecuteAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:line 33
+ |url: |action: 
+2020-07-15 15:29:19.5466||ERROR|Egoal.Invoice.GuangDongBaiWangJiuBin.InvoiceService|Response status code does not indicate success: 404 (Not Found).--<?xml version="1.0" encoding="gbk"?><business id="YHYZ" comment="用户验证"><user lxdm="用户类型"><name>554433221100001</name><sn>F96DFEE0B0D98180AFCC9551209A0DB7B3388B08732AB3E43878232945D4C02B6B00DC122B8DB718C8C72CEB4FC03576D97C8AF3FB90B4D6A7CE26F42E50D087B634902AEF33072C</sn></user></business>-- |url: |action: 
+2020-07-15 15:29:19.6766||ERROR|Egoal.WeChat.OAuth.RefreshAccessTokenWorker|
+HttpRequestException:Response status code does not indicate success: 404 (Not Found).
+StackTrace:
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at System.Net.Http.HttpClient.GetByteArrayAsyncCore(Task`1 getTask)
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url, Encoding encoding) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 38
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 33
+   at Egoal.WeChat.OAuth.OAuthApi.GetAccessTokenAsync() in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\OAuthApi.cs:line 29
+   at Egoal.WeChat.OAuth.RefreshAccessTokenWorker.DoWorkAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\RefreshAccessTokenWorker.cs:line 29
+   at Egoal.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.ExecuteAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:line 33
+ |url: |action: 
+2020-07-15 15:39:19.8547||ERROR|Egoal.Invoice.GuangDongBaiWangJiuBin.InvoiceService|Response status code does not indicate success: 404 (Not Found).--<?xml version="1.0" encoding="gbk"?><business id="YHYZ" comment="用户验证"><user lxdm="用户类型"><name>554433221100001</name><sn>F96DFEE0B0D98180AFCC9551209A0DB7B3388B08732AB3E43878232945D4C02B6B00DC122B8DB718C8C72CEB4FC03576D97C8AF3FB90B4D6A7CE26F42E50D087B634902AEF33072C</sn></user></business>-- |url: |action: 
+2020-07-15 15:39:20.1089||ERROR|Egoal.WeChat.OAuth.RefreshAccessTokenWorker|
+HttpRequestException:Response status code does not indicate success: 404 (Not Found).
+StackTrace:
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at System.Net.Http.HttpClient.GetByteArrayAsyncCore(Task`1 getTask)
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url, Encoding encoding) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 38
+   at Egoal.Net.Http.HttpHelper.GetStringAsync(String url) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Net\Http\HttpHelper.cs:line 33
+   at Egoal.WeChat.OAuth.OAuthApi.GetAccessTokenAsync() in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\OAuthApi.cs:line 29
+   at Egoal.WeChat.OAuth.RefreshAccessTokenWorker.DoWorkAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.WeChat\OAuth\RefreshAccessTokenWorker.cs:line 29
+   at Egoal.Threading.BackgroundWorkers.PeriodicBackgroundWorkerBase.ExecuteAsync(CancellationToken stoppingToken) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Infrastructure\Threading\BackgroundWorkers\PeriodicBackgroundWorkerBase.cs:line 33
+ |url: |action: 
+2020-07-15 15:43:53.4051||ERROR|Egoal.Members.MemberAppService|
+ArgumentNullException:Value cannot be null.
+Parameter name: Code不能为空
+StackTrace:
+   at Egoal.Members.MemberAppService.LoginFromWechatOffiaccountAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Application\Members\MemberAppService.cs:line 101
+   at Egoal.Web.Api.Controllers.MemberController.LoginFromWeChatAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Web.Api\Controllers\MemberController.cs:line 27
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+ |url: http://192.168.1.64/member/LoginFromWeChatAsync|action: LoginFromWeChatAsync
+2020-07-15 15:43:53.5860||ERROR|Egoal.WeChat.OAuth.OAuthApi|invalid code, hints: [ req_id: vhhdRknre-rs0VnA ]--https://api.weixin.qq.com/sns/oauth2/access_token?appid=wx44f7c1dc4eff1cca&secret=eec9eeaaf8f32d244e3673cb4524fd15&code=071HQykR08Wlo52ugdiR0cszkR0HQyk6&grant_type=authorization_code--{"errcode":40029,"errmsg":"invalid code, hints: [ req_id: vhhdRknre-rs0VnA ]"} |url: http://192.168.1.64/member/LoginFromWeChatAsync|action: LoginFromWeChatAsync
+2020-07-15 15:43:53.7691||ERROR|Egoal.WeChat.ApiBase|
+ApiException:invalid code, hints: [ req_id: vhhdRknre-rs0VnA ]
+ |url: http://192.168.1.64/member/LoginFromWeChatAsync|action: LoginFromWeChatAsync
+2020-07-15 16:20:15.5886||DEBUG|Egoal.Web.Api.Program|init main |url: |action: 
+2020-07-15 16:20:21.7382||ERROR|Egoal.Settings.SettingAppService|
+WindowsCryptographicException:指定的网络密码不正确。
+StackTrace:
+   at Internal.Cryptography.Pal.CertificatePal.FilterPFXStore(Byte[] rawData, SafePasswordHandle password, PfxCertStoreFlags pfxCertStoreFlags)
+   at Internal.Cryptography.Pal.CertificatePal.FromBlobOrFile(Byte[] rawData, String fileName, SafePasswordHandle password, X509KeyStorageFlags keyStorageFlags)
+   at System.Security.Cryptography.X509Certificates.X509Certificate..ctor(Byte[] rawData, String password, X509KeyStorageFlags keyStorageFlags)
+   at System.Security.Cryptography.X509Certificates.X509Certificate2..ctor(Byte[] rawData, String password)
+   at Egoal.Settings.SettingAppService.ConfigWeChatOptionsAsync() in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Application\Settings\SettingAppService.cs:line 76
+ |url: |action: 
+2020-07-15 16:20:23.2719||DEBUG|Egoal.BackgroundJobs.BackgroundJobManager|BackgroundJobManager is starting. |url: |action: 
+2020-07-15 16:20:23.3565||DEBUG|Egoal.WeChat.OAuth.RefreshAccessTokenWorker|RefreshAccessTokenWorker is starting. |url: |action: 
+2020-07-15 16:20:23.4792||DEBUG|Egoal.Invoice.GuangDongBaiWangJiuBin.RefreshAccessTokenWorker|RefreshAccessTokenWorker is starting. |url: |action: 
+2020-07-15 16:20:23.5268||DEBUG|Egoal.Redis.RewriteAofWorker|RewriteAofWorker is starting. |url: |action: 
+2020-07-15 16:20:23.9905||ERROR|Egoal.Invoice.GuangDongBaiWangJiuBin.InvoiceService|Response status code does not indicate success: 404 (Not Found).--<?xml version="1.0" encoding="gbk"?><business id="YHYZ" comment="用户验证"><user lxdm="用户类型"><name>554433221100001</name><sn>F96DFEE0B0D98180AFCC9551209A0DB7B3388B08732AB3E43878232945D4C02B6B00DC122B8DB718C8C72CEB4FC03576D97C8AF3FB90B4D6A7CE26F42E50D087B634902AEF33072C</sn></user></business>-- |url: |action: 
+2020-07-15 16:20:24.0296||INFO|Egoal.WeChat.OAuth.OAuthApi|http://y1.sz-egoal.cn:8092/wxapi/cgi-bin/token?grant_type=client_credential&appid=wx44f7c1dc4eff1cca&secret=eec9eeaaf8f32d244e3673cb4524fd15--{"access_token":"35_BrPZU1Re2kOPf6WmoYW8Xj9V0pu_GljCp8Hr19jFbuXDK82KcB8-4DEJUge7FhLVsvpVxL6yEszc1KOaWm8HdZ--MKtZlF6BGjF-xjYAft_w4vZkOOjn_6cwZiou1_x6U9vlpdC1ZPDwcbSaWFCdAEAZIF","expires_in":7200} |url: |action: 
+2020-07-15 16:20:24.3728||INFO|Egoal.WeChat.OAuth.OAuthApi|https://api.weixin.qq.com/cgi-bin/ticket/getticket?access_token=35_BrPZU1Re2kOPf6WmoYW8Xj9V0pu_GljCp8Hr19jFbuXDK82KcB8-4DEJUge7FhLVsvpVxL6yEszc1KOaWm8HdZ--MKtZlF6BGjF-xjYAft_w4vZkOOjn_6cwZiou1_x6U9vlpdC1ZPDwcbSaWFCdAEAZIF&type=jsapi--{"errcode":0,"errmsg":"ok","ticket":"kgt8ON7yVITDhtdwci0qeXw0BVXdts8I_3JbbHFLzXZCYaXvJvT6smhx2dkLFizqUL08JVyt8x4zMPlPrxXCmA","expires_in":7200} |url: |action: 
+2020-07-15 16:21:22.8601||ERROR|Egoal.Members.MemberAppService|
+ArgumentNullException:Value cannot be null.
+Parameter name: Code不能为空
+StackTrace:
+   at Egoal.Members.MemberAppService.LoginFromWechatOffiaccountAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Application\Members\MemberAppService.cs:line 101
+   at Egoal.Web.Api.Controllers.MemberController.LoginFromWeChatAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Web.Api\Controllers\MemberController.cs:line 27
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+ |url: http://192.168.1.64/member/LoginFromWeChatAsync|action: LoginFromWeChatAsync
+2020-07-15 16:22:14.4734||ERROR|Egoal.Members.MemberAppService|
+ArgumentNullException:Value cannot be null.
+Parameter name: Code不能为空
+StackTrace:
+   at Egoal.Members.MemberAppService.LoginFromWechatOffiaccountAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Application\Members\MemberAppService.cs:line 101
+   at Egoal.Web.Api.Controllers.MemberController.LoginFromWeChatAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Web.Api\Controllers\MemberController.cs:line 27
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+ |url: http://192.168.1.64/member/LoginFromWeChatAsync|action: LoginFromWeChatAsync
+2020-07-15 16:22:30.1082||INFO|Egoal.WeChat.OAuth.OAuthApi|https://api.weixin.qq.com/sns/oauth2/access_token?appid=wx44f7c1dc4eff1cca&secret=eec9eeaaf8f32d244e3673cb4524fd15&code=081Svfa01z2q8W1PATa01hffa01SvfaA&grant_type=authorization_code--{"access_token":"35_easc05jVKI0-LHeOJXWM1rt7ETzDwstj-2Hc32wAM8VJcVGRzP5_huNsJZZzmCh9zDozsWp7J6Pvnd95lWVrWkFLLIBuNj7Epnk8PqmcsAw","expires_in":7200,"refresh_token":"35_iO1Xq14mduE08WB3vzxSehoUt5H0CYUC-7ntKmrzbNcneEXbxVpGLUc0oOHhi2bVoZpnqxARDEQWtMKCEntqgDCNAQBbA6q4_utE6j-VLe0","openid":"oRm8hxDbC8FJsh-3R7dClYKCsGy4","scope":"snsapi_userinfo"} |url: http://192.168.1.64/member/LoginFromWeChatAsync|action: LoginFromWeChatAsync
+2020-07-15 16:22:30.3821||INFO|Egoal.WeChat.User.UserApi|https://api.weixin.qq.com/cgi-bin/user/info?access_token=35_BrPZU1Re2kOPf6WmoYW8Xj9V0pu_GljCp8Hr19jFbuXDK82KcB8-4DEJUge7FhLVsvpVxL6yEszc1KOaWm8HdZ--MKtZlF6BGjF-xjYAft_w4vZkOOjn_6cwZiou1_x6U9vlpdC1ZPDwcbSaWFCdAEAZIF&openid=oRm8hxDbC8FJsh-3R7dClYKCsGy4&lang=zh_CN--{"subscribe":1,"openid":"oRm8hxDbC8FJsh-3R7dClYKCsGy4","nickname":"A当幸福来陈典13203007572","sex":1,"language":"en","city":"深圳","province":"广东","country":"中国","headimgurl":"http:\/\/thirdwx.qlogo.cn\/mmopen\/Q3auHgzwzM5UzbSp6Smic9XTwJ2gzick8Xka10BLWuia9adjxsZhH9tlDSdic0A799EufePsyI1JZLstQaBFLEt83HNjibiazZqEJS2aZ6uu69S4M\/132","subscribe_time":1564626403,"remark":"","groupid":0,"tagid_list":[],"subscribe_scene":"ADD_SCENE_SEARCH","qr_scene":0,"qr_scene_str":""} |url: http://192.168.1.64/member/LoginFromWeChatAsync|action: LoginFromWeChatAsync
+2020-07-15 16:30:24.2981||ERROR|Egoal.Invoice.GuangDongBaiWangJiuBin.InvoiceService|Response status code does not indicate success: 404 (Not Found).--<?xml version="1.0" encoding="gbk"?><business id="YHYZ" comment="用户验证"><user lxdm="用户类型"><name>554433221100001</name><sn>F96DFEE0B0D98180AFCC9551209A0DB7B3388B08732AB3E43878232945D4C02B6B00DC122B8DB718C8C72CEB4FC03576D97C8AF3FB90B4D6A7CE26F42E50D087B634902AEF33072C</sn></user></business>-- |url: |action: 
+2020-07-15 16:32:50.7061||ERROR|Egoal.Members.MemberAppService|
+ArgumentNullException:Value cannot be null.
+Parameter name: Code不能为空
+StackTrace:
+   at Egoal.Members.MemberAppService.LoginFromWechatOffiaccountAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Application\Members\MemberAppService.cs:line 101
+   at Egoal.Web.Api.Controllers.MemberController.LoginFromWeChatAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Web.Api\Controllers\MemberController.cs:line 27
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+ |url: http://192.168.1.64/member/LoginFromWeChatAsync|action: LoginFromWeChatAsync
+2020-07-15 16:34:19.9464||INFO|Egoal.WeChat.OAuth.OAuthApi|https://api.weixin.qq.com/sns/jscode2session?appid=wx6b88b58124b3f2b3&secret=62759de6366f4c519ba764848100a312&js_code=061K8j2n0j1wsn14Mn1n0Mpj2n0K8j2Z&grant_type=authorization_code--{"session_key":"VKuVZbFC4Ax7F9\/NR6T9Dw==","openid":"o1rq-4vWM753vuyYe7ZpyjHD9fU0"} |url: http://192.168.1.64/member/LoginFromWechatMiniProgramAsync|action: LoginFromWechatMiniProgramAsync
+2020-07-15 16:37:06.0933||INFO|Egoal.WeChat.OAuth.OAuthApi|https://api.weixin.qq.com/sns/jscode2session?appid=wx6b88b58124b3f2b3&secret=62759de6366f4c519ba764848100a312&js_code=081y2acW1wKaf01hDucW15UbcW1y2acl&grant_type=authorization_code--{"session_key":"ejY60G4oR1v2CH30n3PpyA==","openid":"o1rq-4vWM753vuyYe7ZpyjHD9fU0"} |url: http://192.168.1.64/member/LoginFromWechatMiniProgramAsync|action: LoginFromWechatMiniProgramAsync
+2020-07-15 16:40:24.5707||ERROR|Egoal.Invoice.GuangDongBaiWangJiuBin.InvoiceService|Response status code does not indicate success: 404 (Not Found).--<?xml version="1.0" encoding="gbk"?><business id="YHYZ" comment="用户验证"><user lxdm="用户类型"><name>554433221100001</name><sn>F96DFEE0B0D98180AFCC9551209A0DB7B3388B08732AB3E43878232945D4C02B6B00DC122B8DB718C8C72CEB4FC03576D97C8AF3FB90B4D6A7CE26F42E50D087B634902AEF33072C</sn></user></business>-- |url: |action: 
+2020-07-15 16:40:58.7853||ERROR|Egoal.Members.MemberAppService|
+ArgumentNullException:Value cannot be null.
+Parameter name: Code不能为空
+StackTrace:
+   at Egoal.Members.MemberAppService.LoginFromWechatOffiaccountAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Application\Members\MemberAppService.cs:line 101
+   at Egoal.Web.Api.Controllers.MemberController.LoginFromWeChatAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Web.Api\Controllers\MemberController.cs:line 27
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+ |url: http://192.168.1.64/member/LoginFromWeChatAsync|action: LoginFromWeChatAsync
+2020-07-15 16:42:51.8237||ERROR|Egoal.Members.MemberAppService|
+ArgumentNullException:Value cannot be null.
+Parameter name: Code不能为空
+StackTrace:
+   at Egoal.Members.MemberAppService.LoginFromWechatOffiaccountAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Application\Members\MemberAppService.cs:line 101
+   at Egoal.Web.Api.Controllers.MemberController.LoginFromWeChatAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Web.Api\Controllers\MemberController.cs:line 27
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+ |url: http://192.168.1.64/member/LoginFromWeChatAsync|action: LoginFromWeChatAsync
+2020-07-15 16:47:55.6923||ERROR|Egoal.Members.MemberAppService|
+ArgumentNullException:Value cannot be null.
+Parameter name: Code不能为空
+StackTrace:
+   at Egoal.Members.MemberAppService.LoginFromWechatOffiaccountAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Application\Members\MemberAppService.cs:line 101
+   at Egoal.Web.Api.Controllers.MemberController.LoginFromWeChatAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Web.Api\Controllers\MemberController.cs:line 27
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+ |url: http://192.168.1.64/member/LoginFromWeChatAsync|action: LoginFromWeChatAsync
+2020-07-15 16:50:24.8928||ERROR|Egoal.Invoice.GuangDongBaiWangJiuBin.InvoiceService|Response status code does not indicate success: 404 (Not Found).--<?xml version="1.0" encoding="gbk"?><business id="YHYZ" comment="用户验证"><user lxdm="用户类型"><name>554433221100001</name><sn>F96DFEE0B0D98180AFCC9551209A0DB7B3388B08732AB3E43878232945D4C02B6B00DC122B8DB718C8C72CEB4FC03576D97C8AF3FB90B4D6A7CE26F42E50D087B634902AEF33072C</sn></user></business>-- |url: |action: 
+2020-07-15 16:53:36.2816||ERROR|Egoal.Members.MemberAppService|
+ArgumentNullException:Value cannot be null.
+Parameter name: Code不能为空
+StackTrace:
+   at Egoal.Members.MemberAppService.LoginFromWechatOffiaccountAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Application\Members\MemberAppService.cs:line 101
+   at Egoal.Web.Api.Controllers.MemberController.LoginFromWeChatAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Web.Api\Controllers\MemberController.cs:line 27
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+ |url: http://192.168.1.64/member/LoginFromWeChatAsync|action: LoginFromWeChatAsync
+2020-07-15 17:00:25.1960||ERROR|Egoal.Invoice.GuangDongBaiWangJiuBin.InvoiceService|Response status code does not indicate success: 404 (Not Found).--<?xml version="1.0" encoding="gbk"?><business id="YHYZ" comment="用户验证"><user lxdm="用户类型"><name>554433221100001</name><sn>F96DFEE0B0D98180AFCC9551209A0DB7B3388B08732AB3E43878232945D4C02B6B00DC122B8DB718C8C72CEB4FC03576D97C8AF3FB90B4D6A7CE26F42E50D087B634902AEF33072C</sn></user></business>-- |url: |action: 
+2020-07-15 17:02:35.1965||ERROR|Egoal.Members.MemberAppService|
+ArgumentNullException:Value cannot be null.
+Parameter name: Code不能为空
+StackTrace:
+   at Egoal.Members.MemberAppService.LoginFromWechatOffiaccountAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Application\Members\MemberAppService.cs:line 101
+   at Egoal.Web.Api.Controllers.MemberController.LoginFromWeChatAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Web.Api\Controllers\MemberController.cs:line 27
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+ |url: http://192.168.1.64/member/LoginFromWeChatAsync|action: LoginFromWeChatAsync
+2020-07-15 17:10:25.5128||ERROR|Egoal.Invoice.GuangDongBaiWangJiuBin.InvoiceService|Response status code does not indicate success: 404 (Not Found).--<?xml version="1.0" encoding="gbk"?><business id="YHYZ" comment="用户验证"><user lxdm="用户类型"><name>554433221100001</name><sn>F96DFEE0B0D98180AFCC9551209A0DB7B3388B08732AB3E43878232945D4C02B6B00DC122B8DB718C8C72CEB4FC03576D97C8AF3FB90B4D6A7CE26F42E50D087B634902AEF33072C</sn></user></business>-- |url: |action: 
+2020-07-15 17:10:28.1652||ERROR|Egoal.Members.MemberAppService|
+ArgumentNullException:Value cannot be null.
+Parameter name: Code不能为空
+StackTrace:
+   at Egoal.Members.MemberAppService.LoginFromWechatOffiaccountAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Application\Members\MemberAppService.cs:line 101
+   at Egoal.Web.Api.Controllers.MemberController.LoginFromWeChatAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Web.Api\Controllers\MemberController.cs:line 27
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+ |url: http://192.168.1.64/member/LoginFromWeChatAsync|action: LoginFromWeChatAsync
+2020-07-15 17:11:35.4855||ERROR|Egoal.Members.MemberAppService|
+ArgumentNullException:Value cannot be null.
+Parameter name: Code不能为空
+StackTrace:
+   at Egoal.Members.MemberAppService.LoginFromWechatOffiaccountAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Application\Members\MemberAppService.cs:line 101
+   at Egoal.Web.Api.Controllers.MemberController.LoginFromWeChatAsync(WechatOffiaccountLoginInput input) in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Web.Api\Controllers\MemberController.cs:line 27
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()
+ |url: http://192.168.1.64/member/LoginFromWeChatAsync|action: LoginFromWeChatAsync
+2020-07-15 18:03:32.4298||DEBUG|Egoal.Web.Api.Program|init main |url: |action: 
+2020-07-15 18:04:09.1399||DEBUG|Egoal.Web.Api.Program|init main |url: |action: 
+2020-07-15 18:04:13.9954||ERROR|Egoal.Settings.SettingAppService|
+WindowsCryptographicException:指定的网络密码不正确。
+StackTrace:
+   at Internal.Cryptography.Pal.CertificatePal.FilterPFXStore(Byte[] rawData, SafePasswordHandle password, PfxCertStoreFlags pfxCertStoreFlags)
+   at Internal.Cryptography.Pal.CertificatePal.FromBlobOrFile(Byte[] rawData, String fileName, SafePasswordHandle password, X509KeyStorageFlags keyStorageFlags)
+   at System.Security.Cryptography.X509Certificates.X509Certificate..ctor(Byte[] rawData, String password, X509KeyStorageFlags keyStorageFlags)
+   at System.Security.Cryptography.X509Certificates.X509Certificate2..ctor(Byte[] rawData, String password)
+   at Egoal.Settings.SettingAppService.ConfigWeChatOptionsAsync() in D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Application\Settings\SettingAppService.cs:line 76
+ |url: |action: 
+2020-07-15 18:04:15.1831||DEBUG|Egoal.BackgroundJobs.BackgroundJobManager|BackgroundJobManager is starting. |url: |action: 
+2020-07-15 18:04:15.2528||DEBUG|Egoal.WeChat.OAuth.RefreshAccessTokenWorker|RefreshAccessTokenWorker is starting. |url: |action: 
+2020-07-15 18:04:15.3628||DEBUG|Egoal.Invoice.GuangDongBaiWangJiuBin.RefreshAccessTokenWorker|RefreshAccessTokenWorker is starting. |url: |action: 
+2020-07-15 18:04:15.4002||DEBUG|Egoal.Redis.RewriteAofWorker|RewriteAofWorker is starting. |url: |action: 
+2020-07-15 18:04:15.7602||ERROR|Egoal.Invoice.GuangDongBaiWangJiuBin.InvoiceService|Response status code does not indicate success: 404 (Not Found).--<?xml version="1.0" encoding="gbk"?><business id="YHYZ" comment="用户验证"><user lxdm="用户类型"><name>554433221100001</name><sn>F96DFEE0B0D98180AFCC9551209A0DB7B3388B08732AB3E43878232945D4C02B6B00DC122B8DB718C8C72CEB4FC03576D97C8AF3FB90B4D6A7CE26F42E50D087B634902AEF33072C</sn></user></business>-- |url: |action: 
+2020-07-15 18:04:15.7783||INFO|Egoal.WeChat.OAuth.OAuthApi|http://y1.sz-egoal.cn:8092/wxapi/cgi-bin/token?grant_type=client_credential&appid=wx44f7c1dc4eff1cca&secret=eec9eeaaf8f32d244e3673cb4524fd15--{"access_token":"35_q9P-6lLL0MdNT7KABmg90cJ_YLTFxfCzdSYA4B3RMRQbpJGs8i8z7IHrrn6pR-uFrhjzWv23VdAeCSxPecxmX2RYbsg_zK86gU8cgV1HPgSQq5F0_hRL5cbYNAFRM5VkTlKH_9Rt8sFX3OegZRThAHAJBD","expires_in":7200} |url: |action: 
+2020-07-15 18:04:16.1676||INFO|Egoal.WeChat.OAuth.OAuthApi|https://api.weixin.qq.com/cgi-bin/ticket/getticket?access_token=35_q9P-6lLL0MdNT7KABmg90cJ_YLTFxfCzdSYA4B3RMRQbpJGs8i8z7IHrrn6pR-uFrhjzWv23VdAeCSxPecxmX2RYbsg_zK86gU8cgV1HPgSQq5F0_hRL5cbYNAFRM5VkTlKH_9Rt8sFX3OegZRThAHAJBD&type=jsapi--{"errcode":0,"errmsg":"ok","ticket":"kgt8ON7yVITDhtdwci0qeXw0BVXdts8I_3JbbHFLzXahgb5JwHG-fHq31p2M6VlsuFhB3YuypYvzoHMwLNEbaQ","expires_in":7200} |url: |action: 

@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Egoal</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Messages\Templates\InvoiceMessage.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Messages\Templates\InvoiceMessage.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Localization" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="2.1.1" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="4.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Egoal.Domain\Egoal.Domain.csproj" />
+    <ProjectReference Include="..\Egoal.Infrastructure\Egoal.Infrastructure.csproj" />
+    <ProjectReference Include="..\Egoal.Model\Egoal.Model.csproj" />
+    <ProjectReference Include="..\Egoal.Payment.Alipay\Egoal.Payment.Alipay.csproj" />
+    <ProjectReference Include="..\Egoal.Payment.ICBC\Egoal.Payment.IcbcPay.csproj" />
+    <ProjectReference Include="..\Egoal.Payment.SaobePay\Egoal.Payment.SaobePay.csproj" />
+    <ProjectReference Include="..\Egoal.Payment.WeChatPay\Egoal.Payment.WeChatPay.csproj" />
+    <ProjectReference Include="..\Egoal.WeChat\Egoal.WeChat.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\ChenDian\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\ChenDian\\.nuget\\packages"
+    ]
+  }
+}

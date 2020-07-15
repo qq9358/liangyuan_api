@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Egoal</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Customers\**" />
+    <Compile Remove="DynamicCodes\**" />
+    <Compile Remove="Members\**" />
+    <EmbeddedResource Remove="Customers\**" />
+    <EmbeddedResource Remove="DynamicCodes\**" />
+    <EmbeddedResource Remove="Members\**" />
+    <None Remove="Customers\**" />
+    <None Remove="DynamicCodes\**" />
+    <None Remove="Members\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="1.50.5" />
+    <PackageReference Include="Microsoft.CSharp" Version="4.5.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Egoal.Application\Egoal.Application.csproj" />
+    <ProjectReference Include="..\Egoal.Domain\Egoal.Domain.csproj" />
+    <ProjectReference Include="..\Egoal.EntityFrameworkCore\Egoal.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\Egoal.Infrastructure\Egoal.Infrastructure.csproj" />
+    <ProjectReference Include="..\Egoal.Model\Egoal.Model.csproj" />
+  </ItemGroup>
+
+</Project>

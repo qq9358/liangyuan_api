@@ -1,0 +1,12 @@
+D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Payment.Alipay\bin\Debug\netstandard2.0\Egoal.Payment.Alipay.deps.json
+D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Payment.Alipay\bin\Debug\netstandard2.0\Egoal.Payment.Alipay.dll
+D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Payment.Alipay\bin\Debug\netstandard2.0\Egoal.Payment.Alipay.pdb
+D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Payment.Alipay\bin\Debug\netstandard2.0\Egoal.Infrastructure.dll
+D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Payment.Alipay\bin\Debug\netstandard2.0\Egoal.Infrastructure.pdb
+D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Payment.Alipay\obj\Debug\netstandard2.0\Egoal.Payment.Alipay.csprojAssemblyReference.cache
+D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Payment.Alipay\obj\Debug\netstandard2.0\Egoal.Payment.Alipay.AssemblyInfoInputs.cache
+D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Payment.Alipay\obj\Debug\netstandard2.0\Egoal.Payment.Alipay.AssemblyInfo.cs
+D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Payment.Alipay\obj\Debug\netstandard2.0\Egoal.Payment.Alipay.csproj.CoreCompileInputs.cache
+D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Payment.Alipay\obj\Debug\netstandard2.0\Egoal.Payment.Alipay.csproj.CopyComplete
+D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Payment.Alipay\obj\Debug\netstandard2.0\Egoal.Payment.Alipay.dll
+D:\Code\Egoal\Web\TMS5.5梁园\Api\src\Egoal.Payment.Alipay\obj\Debug\netstandard2.0\Egoal.Payment.Alipay.pdb

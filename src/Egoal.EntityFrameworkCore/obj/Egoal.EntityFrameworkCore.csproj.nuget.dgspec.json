@@ -1,0 +1,186 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.EntityFrameworkCore\\Egoal.EntityFrameworkCore.csproj": {}
+  },
+  "projects": {
+    "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.EntityFrameworkCore\\Egoal.EntityFrameworkCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.EntityFrameworkCore\\Egoal.EntityFrameworkCore.csproj",
+        "projectName": "Egoal.EntityFrameworkCore",
+        "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.EntityFrameworkCore\\Egoal.EntityFrameworkCore.csproj",
+        "packagesPath": "C:\\Users\\ChenDian\\.nuget\\packages\\",
+        "outputPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.EntityFrameworkCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ChenDian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Infrastructure\\Egoal.Infrastructure.csproj": {
+                "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Infrastructure\\Egoal.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Infrastructure\\Egoal.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Infrastructure\\Egoal.Infrastructure.csproj",
+        "projectName": "Egoal.Infrastructure",
+        "projectPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Infrastructure\\Egoal.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\ChenDian\\.nuget\\packages\\",
+        "outputPath": "D:\\Code\\Egoal\\Web\\TMS5.5梁园\\Api\\src\\Egoal.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ChenDian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "EPPlus": {
+              "target": "Package",
+              "version": "[4.5.2.1, )"
+            },
+            "JetBrains.Annotations": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
+            "Microsoft.Extensions.Caching.Memory": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[5.2.2, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[11.0.2, )"
+            },
+            "Nito.AsyncEx.Context": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "QRCoder": {
+              "target": "Package",
+              "version": "[1.3.5, )"
+            },
+            "System.Collections.Immutable": {
+              "target": "Package",
+              "version": "[1.5.0, )"
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "TinyMapper": {
+              "target": "Package",
+              "version": "[3.0.2-beta, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
